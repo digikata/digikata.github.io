@@ -1,0 +1,12 @@
+
+default :
+	@echo gen generate pages 
+	@echo serve serve a local version
+
+gen :
+	zola build -o html/
+
+serve :
+	# Zola serve will create a temporary ./public directory
+	zola serve
+
