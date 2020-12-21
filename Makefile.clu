@@ -4,7 +4,9 @@ default :
 	@echo serve serve a local version
 
 gen :
-	zola build -o html/
+	# github pages will only serve a subfolder with the option of docs
+	# odd but whatever
+	zola build -o docs/
 
 serve :
 	# Zola serve will create a temporary ./public directory
