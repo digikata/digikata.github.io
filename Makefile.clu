@@ -9,6 +9,8 @@ publish:
 	cd pub && git add docs/
 	-cd pub && git commit -m "publish from master"
 	-cd pub && git push
+	# resync pub branch to this repo
+	git fetch 
 	git add -u
 	git commit -m "publish to pub"
 	git push
