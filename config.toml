@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://digikata.github.io"
+base_url = "https://www.digikata.com"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -15,6 +15,8 @@ build_search_index = true
 theme = "solar-theme-zola"
 # For solarized theme
 highlight_theme = "solarized-dark"
+
+title = "Digikata Blog"
 
 [extra]
 # Put all your custom variables here
