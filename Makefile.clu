@@ -1,8 +1,17 @@
 
 default :
+	@echo publish merge master to pub branch, regenerate docs, commit and push
 	@echo gen generate pages 
 	@echo serve serve a local version
 
+publish:
+	git checkout pub
+	git merge master -m "script merge"
+	zola build -o docs/
+	git add docs/
+	git commit -m "automated sync and push"
+	git push
+	
 gen :
 	# github pages will only serve a subfolder with the option of docs
 	# odd but whatever
