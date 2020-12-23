@@ -5,17 +5,18 @@ default :
 	@echo serve serve a local version
 
 publish:
-	git checkout pub
-	git merge master -m "script merge"
-	zola build -o docs/
-	git add docs/
-	git commit -m "automated sync and push"
+	zola build -o pub/docs/
+	cd pub && git add docs/
+	-cd pub && git commit -m "publish from master"
+	-cd pub && git push
+	git add -u
+	git commit -m "publish to pub"
 	git push
 	
 gen :
 	# github pages will only serve a subfolder with the option of docs
 	# odd but whatever
-	zola build -o docs/
+	zola build -o pub/docs/
 
 serve :
 	# Zola serve will create a temporary ./public directory

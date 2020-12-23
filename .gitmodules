@@ -4,3 +4,7 @@
 [submodule "themes/solar-theme-zola"]
 	path = themes/solar-theme-zola
 	url = https://github.com/hulufei/solar-theme-zola
+[submodule "pub"]
+	path = pub
+	url = git@github.com:digikata/digikata.github.io.git
+	branch = pub
