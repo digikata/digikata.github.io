@@ -27,7 +27,7 @@ title = "Digikata Blog"
 
 # for solarized theme
 site_menus = [
-	{url = "https://digikata.github.io", name = "Home"},
+	{url = "https://www.digikata.com", name = "Home"},
     {url = "https://github.com/digikata", name = "Github"},
     {url = "https://linkedin.com/in/alanchen", name = "LinkedIn"},
 ]
