@@ -30,6 +30,7 @@ site_menus = [
 	{url = "https://www.digikata.com", name = "Home"},
     {url = "https://github.com/digikata", name = "Github"},
     {url = "https://linkedin.com/in/alanchen", name = "LinkedIn"},
+    {url = "https://stackoverflow.com/users/130554/digikata", name = "Stack Overflow"},
 ]
 
 
