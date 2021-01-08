@@ -46,6 +46,10 @@
                     <a href="https:&#x2F;&#x2F;linkedin.com&#x2F;in&#x2F;alanchen"><span>LinkedIn</span></a>
                   </li>
                 
+                  <li>
+                    <a href="https:&#x2F;&#x2F;stackoverflow.com&#x2F;users&#x2F;130554&#x2F;digikata"><span>Stack Overflow</span></a>
+                  </li>
+                
               
             </ul>
           </nav>
@@ -57,6 +61,31 @@
           
             
           
+          
+            <article class="post">
+              <h1><a href="https:&#x2F;&#x2F;www.digikata.com&#x2F;rust-io-uring-part1&#x2F;">Rust and io_uring Part 1</a></h1>
+              
+                <div class="post-content">
+                  <p>There are really a lot of different io_uring crates for rust. Some are quick
+bindings, some are specialized to particular application or runtime
+environments, some are doing deeper experiments to how they connect to the
+applications using the interface,  I think I'll start looking at them to
+contrast their approaches in a little more detail.</p>
+<p>First a little background on a number of different approaches a program can
+take in order to make I/O calls, be they to the network, disk, or some other
+device. This post is the first in a series of notes reviewing the tradeoffs of
+the various approaches at a high level, from different kinds of synchronous
+i/o calls to different kinds of asynchronous calls. Some focus on an
+environment where a program os running directly in an OS, but a lot of this
+also applies in other environments besides Rust.</p>
+<p>The first part is below on a little background on Synchronous I/O and
+architectures that handle it, mostly a language independent discussion.</p>
+
+                  <nav class="readmore"><a itemprop="url" href="https://www.digikata.com/rust-io-uring-part1/">Read More&nbsp;&raquo;</a></nav>
+                </div>
+              
+              <p class="meta">Posted on <span class="postdate">2020-12-31</span></p>
+            </article>
           
             <article class="post">
               <h1><a href="https:&#x2F;&#x2F;www.digikata.com&#x2F;erasure-coding-cern&#x2F;">Paper: Erasure Coding for production in the EOS Open Storage system</a></h1>
