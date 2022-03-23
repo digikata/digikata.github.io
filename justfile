@@ -1,9 +1,8 @@
 
 default :
-	@echo publish merge master to pub branch, regenerate docs, commit and push
-	@echo gen generate pages 
-	@echo serve serve a local version
+	just -l
 
+# publish merge master to pub branch, regen docs, commit and push
 publish:
 	zola build -o pub/docs/
 	cd pub && git add docs/
@@ -14,12 +13,14 @@ publish:
 	git add -u
 	git commit -m "publish to pub"
 	git push
-	
+
+# generate pages	
 gen :
 	# github pages will only serve a subfolder with the option of docs
 	# odd but whatever
 	zola build -o pub/docs/
 
+# serve local check
 serve :
 	# Zola serve will create a temporary ./public directory
 	zola serve

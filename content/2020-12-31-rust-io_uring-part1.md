@@ -9,6 +9,8 @@ environments, some are doing deeper experiments to how they connect to the
 applications using the interface,  I think I'll start looking at them to
 contrast their approaches in a little more detail.
 
+<!-- more -->
+
 First a little background on a number of different approaches a program can
 take in order to make I/O calls, be they to the network, disk, or some other
 device. This post is the first in a series of notes reviewing the tradeoffs of
@@ -19,8 +21,6 @@ also applies in other environments besides Rust.
 
 The first part is below on a little background on Synchronous I/O and
 architectures that handle it, mostly a language independent discussion.
-
-<!-- more -->
 
 ## Synchronous I/O
 
@@ -108,5 +108,5 @@ standardized:
 	* linux aio
 	* io_uring
 
-The next part will focus in on the Linux asynchronous apis and in particular io_uring and
-Rust crates accessing that interface.
+The next part (if I ever find some time) will focus in on the Linux asynchronous apis and in particular io_uring and Rust crates accessing that interface.
+
