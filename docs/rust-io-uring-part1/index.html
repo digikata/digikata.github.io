@@ -39,11 +39,11 @@
                   </li>
                 
                   <li>
-                    <a href="https:&#x2F;&#x2F;github.com&#x2F;digikata"><span>Github</span></a>
+                    <a href="https:&#x2F;&#x2F;linkedin.com&#x2F;in&#x2F;alanchen"><span>LinkedIn</span></a>
                   </li>
                 
                   <li>
-                    <a href="https:&#x2F;&#x2F;linkedin.com&#x2F;in&#x2F;alanchen"><span>LinkedIn</span></a>
+                    <a href="https:&#x2F;&#x2F;github.com&#x2F;digikata"><span>Github</span></a>
                   </li>
                 
                   <li>
@@ -66,6 +66,7 @@ bindings, some are specialized to particular application or runtime
 environments, some are doing deeper experiments to how they connect to the
 applications using the interface,  I think I'll start looking at them to
 contrast their approaches in a little more detail.</p>
+<span id="continue-reading"></span>
 <p>First a little background on a number of different approaches a program can
 take in order to make I/O calls, be they to the network, disk, or some other
 device. This post is the first in a series of notes reviewing the tradeoffs of
@@ -75,7 +76,7 @@ environment where a program os running directly in an OS, but a lot of this
 also applies in other environments besides Rust.</p>
 <p>The first part is below on a little background on Synchronous I/O and
 architectures that handle it, mostly a language independent discussion.</p>
-<span id="continue-reading"></span><h2 id="synchronous-i-o">Synchronous I/O</h2>
+<h2 id="synchronous-i-o">Synchronous I/O</h2>
 <p>Synchronous I/O is the most common way to access data where program execution
 waits on calls to read or write data. It is supported by common system I/O
 apis (POSIX et al), and is simple, robust, and easy to reason about.</p>
@@ -157,8 +158,7 @@ standardized:</p>
 </ul>
 </li>
 </ul>
-<p>The next part will focus in on the Linux asynchronous apis and in particular io_uring and
-Rust crates accessing that interface.</p>
+<p>The next part (if I ever find some time) will focus in on the Linux asynchronous apis and in particular io_uring and Rust crates accessing that interface.</p>
 </div>
 
   <p class="meta">Posted on <span class="postdate">2020-12-31</span></p>
