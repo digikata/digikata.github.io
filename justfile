@@ -3,8 +3,8 @@ default :
 	just -l
 
 # publish merge master to pub branch, regen docs, commit and push
-publish:
-	zola build -o pub/docs/
+publish: gen
+	#zola build -o pub/docs/
 	cd pub && git add docs/
 	-cd pub && git commit -m "publish from master"
 	-cd pub && git push
