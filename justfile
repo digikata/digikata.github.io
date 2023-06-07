@@ -4,10 +4,10 @@ default :
 
 # publish merge master to pub branch, regen docs, commit and push
 publish: gen
-	#zola build -o pub/docs/
+	# the pub dir is a submodule branch of this repo w/ just the output docs
 	cd pub && git add docs/
 	-cd pub && git commit -m "publish from master"
-	-cd pub && git push
+	-cd pub && git push -f origin HEAD:pub
 	# resync pub branch to this repo
 	git fetch 
 	git add -u
