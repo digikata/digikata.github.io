@@ -12,7 +12,7 @@ highlight_code = true
 build_search_index = true
 
 # theme = "hyde"
-theme = "solar-theme-zola"
+theme = "solar-theme-zola-mod"
 # For solarized theme
 highlight_theme = "solarized-dark"
 
@@ -23,7 +23,7 @@ title = "Digikata Blog"
 
 
 # for hyde theme
-# hyde_menus = [ 
+# hyde_menus = [
 
 # for solarized theme
 site_menus = [
@@ -31,7 +31,7 @@ site_menus = [
     {url = "/about", name = "About"},
     {url = "https://github.com/digikata", name = "Github"},
     {url = "https://fosstodon.org/@digikata", name = "Mastodon", rel = "me"},
-    {url = "https://linkedin.com/in/alanchen", name = "LinkedIn"},    
+    {url = "https://linkedin.com/in/alanchen", name = "LinkedIn"},
     {url = "https://stackoverflow.com/users/130554/digikata", name = "Stack Overflow"},
 ]
 
