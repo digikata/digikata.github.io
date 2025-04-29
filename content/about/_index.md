@@ -1,7 +1,5 @@
 +++
 title = "About"
-path = "about"
-template = "about.html"
 +++
 
 Alan Chen is a Software Engineer with a background in systems engineering in multiple domains. I love bringing new and updated systems into real-world production.
@@ -13,4 +11,5 @@ Alan Chen is a Software Engineer with a background in systems engineering in mul
 - autonomous vehicles
 - embedded systems
 
-Chat with me on <a rel="me" href="https://fosstodon.org/@digikata">Mastodon</a>
+Chat with me in <a rel="me" href="https://fosstodon.org/@digikata">the Fediverse</a>
+
