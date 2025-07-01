@@ -8,3 +8,6 @@
 	path = pub
 	url = git@github.com:digikata/digikata.github.io.git
 	branch = pub
+[submodule "themes/themes/ergo"]
+	path = themes/themes/ergo
+	url = https://github.com/insipx/Ergo

@@ -9,12 +9,12 @@ publish: gen
 	-cd pub && git commit -m "publish from master"
 	-cd pub && git push -f origin HEAD:pub
 	# resync pub branch to this repo
-	git fetch 
+	git fetch
 	git add -u
 	git commit -m "publish to pub"
 	git push
 
-# generate pages	
+# generate pages
 gen :
 	# github pages will only serve a subfolder with the option of docs
 	# odd but whatever
@@ -25,3 +25,9 @@ serve :
 	# Zola serve will create a temporary ./public directory
 	zola serve
 
+serve-op:
+	just serve &
+	open http://127.0.0.1:1111
+
+open:
+	open http://127.0.0.1:1111
