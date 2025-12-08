@@ -6,29 +6,79 @@ date = 2025-04-10
 The Tracing crate for Rust is a well-implemented tracing library for a wide
 range of tracing and logging needs. However, I haven't seen a simple startup
 guide for tracing. This is what would have saved me some time when
-getting started with Tracing.
+getting started with Tracing. This goes over a very common setup of defining
+a default set of trace levels, while accepting an overriding setup from
+the **`RUST_LOG`** environment variable. It will also go over tips on how
+**`RUST_LOG`** can be used. *(Learning to use **`RUST_LOG`** beyond the simple
+setting of a global log level is worth it!)*
 
 <!-- more -->
 
-I've put together a [quickstart repository](https://github.com/digikata/tracing-quickstart)
-with the examples below.
+## RUST_LOG Basics
+
+The tracing system uses the standard logging levels, and it's common to see
+the logging level globally set level via `*RUST_LOG*`:
+
+- RUST_LOG=error
+- RUST_LOG=warn
+- RUST_LOG=info
+- RUST_LOG=debug
+- RUST_LOG=trace
+- RUST_LOG=off
+
+**Note: 'off' is more a tracing logger state than a level, but read on to see
+how it is useful*
+
+`*RUST_LOG*` can specifiy more than a global logging level though. Multiple log
+**targets** each with individual levels can be specified. For example:
+
+`RUST_LOG=info,tokio=warn,hyper=off`
+
+Three specifications were provided here, a global `info` level setting, for
+`tokio` show warn or higher level logs, and for `hyper` targets, turn them all
+off.
+
+Later in this writeup there is a deeper look at RUST_LOG syntax and how it
+connects to the tracing macro invocations, but this covers 80% of the common
+uses.
 
 ## Setting Up Tracing
 
-Basic setup requires adding the `tracing` and `tracing-subscriber` dependencies
-to your `Cargo.toml`.
+Basic setup requires three basic parts:
+- adding the `tracing` and `tracing-subscriber` dependencies
+to your `Cargo.toml`
+- setup of the tracing system near the initilization of the
+rust application
+- using the tracing macros throughout the code
+
+
+
+### Tracing Cargo.toml dependencies
 
 ```toml
 [dependencies]
 tracing = "0.1"
-tracing-subscriber = "0.3"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "fmt", "time"] }
 ```
+The `env-filter` feature is what enables dynamically applying different tracing
+settings from the RUST_LOG
 
+### Initializing the tracing system
 Then, initialize the tracing system. A frequent use case is setting up some default
 trace levels, but also taking in the `RUST_LOG` environment variable to change
 what is logged dynamically. The final `Subscriber::builder()... try_init()` will
-setup the tracing configuration as the global tracing configuration.  It's not
-recommended to setup tracing multiple times or places.
+setup the tracing configuration as the global tracing configuration.  Setting
+up the tracing layer is global, and its generally not recommended to setup
+tracing multiple times or places.
+
+The simplest initialization is this:
+```rust
+fn main() {
+    tracing_subscriber::fmt::init();
+}
+```
+
+
 
 ```rust
 fn setup_tracing() {
@@ -44,8 +94,8 @@ fn setup_tracing() {
 
     Subscriber::builder()
         .with_env_filter(env_filter)
-        // .with_timer(fmt::time::uptime()) // different time formats allowed
         .with_timer(fmt::time::UtcTime::rfc_3339())
+        // .with_timer(fmt::time::uptime()) // different time formats could be selected
         .with_span_events(fmt::format::FmtSpan::CLOSE)
         .try_init()
         .expect("unable to setup tracing");
@@ -54,7 +104,7 @@ fn setup_tracing() {
 
 There are a lot of ways to structure outputs, including sending different
 logs to different outputs with `Layers`, see the function `setup_tracing_alt()`
-for an example.
+for an example. For now just take a look
 
 ## Basic Logging Levels
 
@@ -87,8 +137,9 @@ some lines that look like this:
 ```
 
 Tracing and `RUST_LOG` let you specify targeted logs and log levels. Multiple
-scopes can be targeted, each with a different level. For example,
-`RUST_LOG=off,my_target cargo run` will reduce the output to:
+scopes can be targeted, each with a different level. The tracing-subscriber
+refers to this as a [Directive](https://docs.rs/tracing-subscriber/latest/tracing_subscriber/filter/struct.EnvFilter.html#directives)
+For example, `RUST_LOG=off,my_target cargo run` will reduce the output to:
 ```
 0.000091780s  INFO my_target: targeted log
 0.000104580s  WARN my_target: targeted log with parameter parameter
@@ -103,6 +154,8 @@ globally apply, but the `my_target` above, turns logging back on for those lines
 ```
 0.000104580s  WARN my_target: targeted log with parameter parameter
 ```
+
+*Specific spans and fields can be specified too, `target[span{field=value}]=level`, see [Directives](https://docs.rs/tracing-subscriber/latest/tracing_subscriber/filter/struct.EnvFilter.html#directives)*
 
 ## Creating targets
 
@@ -170,5 +223,7 @@ When run this generates
 
 There are a lot more nuances of the tracing crate. Only the bare basics are
 outlined here. Some interesting, but still basic, variations are provided in the
-`tracing-quickstart` code, but there are much richer examples in the
-[documentation](https://docs.rs/tracing) and overall rust ecosystem.
+[`tracing-quickstart` repository]((https://github.com/digikata/tracing-quickstart)),
+but there are many richer examples in the[tracing documentation](https://docs.rs/tracing)
+and overall rust ecosystem.
+
