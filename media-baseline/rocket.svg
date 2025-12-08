@@ -1,0 +1,72 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+            <defs>
+                <!-- Gradient for the rocket body -->
+                <linearGradient id="rocketBodyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#d1d5db; stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#9ca3af; stop-opacity:1" />
+                </linearGradient>
+
+                <!-- Gradient for the fins and nose -->
+                <linearGradient id="rocketAccentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#ef4444; stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#b91c1c; stop-opacity:1" />
+                </linearGradient>
+
+                <!-- Gradient for the flame -->
+                <radialGradient id="flameGradient">
+                    <stop offset="0%" stop-color="#fef08a" />
+                    <stop offset="50%" stop-color="#f59e0b" />
+                    <stop offset="100%" stop-color="#ef4444" />
+                </radialGradient>
+
+                <!-- Gradient for the nozzle -->
+                <linearGradient id="nozzleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#6b7280;" />
+                    <stop offset="50%" style="stop-color:#4b5563;" />
+                    <stop offset="100%" style="stop-color:#6b7280;" />
+                </linearGradient>
+            </defs>
+            
+            <!-- Stars in the background -->
+            <circle cx="30" cy="40" r="1.5" fill="white" opacity="0.8"/>
+            <circle cx="170" cy="60" r="1" fill="white" opacity="0.7"/>
+            <circle cx="150" cy="150" r="1.5" fill="white" opacity="0.9"/>
+            <circle cx="50" cy="160" r="1" fill="white" opacity="0.6"/>
+            <circle cx="80" cy="20" r="1" fill="white" opacity="0.8"/>
+            <circle cx="180" cy="120" r="1.2" fill="white" opacity="0.8"/>
+
+
+            <!-- Rocket Group -->
+            <g transform="translate(100 100) rotate(-45)">
+
+                <!-- Rocket Flame -->
+                <path d="M 0 65 C -15 85, 15 85, 0 105 C 15 85, -15 85, 0 65" fill="url(#flameGradient)" stroke="#f59e0b" stroke-width="1"/>
+
+                <!-- Rocket Engine Nozzle -->
+                <path d="M -8 58 L 8 58 L 6 65 L -6 65 Z" fill="url(#nozzleGradient)" stroke="#374151" stroke-width="1"/>
+
+                <!-- Left Fin (Larger) -->
+                <path d="M -15 20 L -45 60 L 0 40 Z" fill="url(#rocketAccentGradient)" stroke="#7f1d1d" stroke-width="1.5" />
+
+                <!-- Right Fin (Larger) -->
+                <path d="M 15 20 L 45 60 L 0 40 Z" fill="url(#rocketAccentGradient)" stroke="#7f1d1d" stroke-width="1.5" />
+                
+                <!-- Rocket Body with integrated Nose Cone -->
+                <path d="M 0 -80 C 25 0, 25 50, 15 58 L -15 58 C -25 50, -25 0, 0 -80 Z" fill="url(#rocketBodyGradient)" stroke="#4b5563" stroke-width="1.5" />
+                
+                <!-- Antenna -->
+                <g stroke="#4b5563" stroke-width="1" fill="#d1d5db">
+                    <!-- Base -->
+                    <path d="M -2.5 -80 L 2.5 -80 L 1.5 -82 L -1.5 -82 Z" />
+                    <!-- Shaft -->
+                    <line x1="0" y1="-82" x2="0" y2="-92" stroke-width="1.5"/>
+                    <!-- Tip -->
+                    <circle cx="0" cy="-94" r="2.5" stroke-width="1.5"/>
+                </g>
+
+                <!-- Window -->
+                <circle cx="0" cy="-15" r="10" fill="#a5f3fc" stroke="#0891b2" stroke-width="1.5" />
+                <circle cx="0" cy="-15" r="7" fill="none" stroke="#0e7490" stroke-width="1" opacity="0.5"/>
+
+            </g>
+        </svg>
