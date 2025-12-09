@@ -1,0 +1,30 @@
+# The URL the site will be built for
+base_url = "https://digikata.com"
+output_dir = "pub"
+title = "Digikata Blog"
+description = "My underupdated blog"
+
+# Other basic settings
+compile_sass = true
+build_search_index = false
+default_language = "en"
+theme = "zola-pickles"
+minify_html = false
+
+# Feed settings
+generate_feeds = true
+feed_filenames = ["atom.xml"]
+feed_limit = 20
+
+# A list of glob patterns specifying asset files to ignore when the content
+# directory is processed. Defaults to none, which means that all asset files are
+# copied over to the `public` directory.
+# Example:
+#     ignored_content = ["*.{graphml,xlsx}", "temp.*"]
+ignored_content = []
+
+[markdown]
+highlight_code = true
+highlight_theme = "solarized-light"
+
+[extra]
