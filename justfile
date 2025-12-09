@@ -4,8 +4,10 @@ _default :
 
 # publish merge master to pub branch, regen docs, commit and push
 publish: gen
-	# the pub dir is a submodule branch of this repo w/ just the output docs
-	cd pub && git add docs/
+	#
+	# the pub dir is a submodule branch of this repo w/ just the output docs of
+	# the site
+	cd pub && git add site/
 	-cd pub && git commit -m "publish from master"
 	-cd pub && git push -f origin HEAD:pub
 	# resync pub branch to this repo
@@ -18,7 +20,7 @@ publish: gen
 gen :
 	# github pages will only serve a subfolder with the option of docs
 	# odd but whatever
-	zola build -f -o pub/docs/
+	zola build -f -o pub/site/
 
 # serve local check
 serve :
