@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      
+  
+  Paper: Erasure Coding for production in the EOS Open Storage system |
+  
+
+      Digikata Blog
+    </title>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    
+  
+      <link
+        rel="stylesheet"
+        type="text/css"
+        media="all"
+        href="https://digikata.com/style.css?h=ce0d738084ebd68ca8f7"
+      />
+    
+  <link
+    rel="stylesheet"
+    type="text/css"
+    media="all"
+    href="https://digikata.com/custom.css?h=799f4bae0b649649d358"
+  />
+
+
+    
+      
+      
+        <link rel="alternate" type="application/atom+xml" title="Atom" href="https://digikata.com/atom.xml">
+      
+    
+  </head>
+  <body>
+    <header>
+      <h1><a href="https:&#x2F;&#x2F;digikata.com">Digikata Blog</a></h1>
+      <nav>
+        <ul>
+          
+          <li><a href="https:&#x2F;&#x2F;digikata.com">Posts</a></li>
+          
+            
+            <li><a href="https:&#x2F;&#x2F;digikata.com&#x2F;about&#x2F;">About</a></li>
+          
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      
+  
+
+  <article>
+    
+      <header>
+        <h1>
+        Paper: Erasure Coding for production in the EOS Open Storage system
+        </h1>
+      </header>
+    
+
+    <p>A paper on use of per-file Erasure Coding redundancy in the EOS Filesystem used at CERN. Reasonably basic use of EC at this level of description, but it is always nice to see a review of various design decisons in a real world system.</p>
+<p>Abstract, comments and links further on.</p>
+<span id="continue-reading"></span>
+<p><strong>Abstract</strong> The storage group of CERN IT operates more than 20 individualEOS storage services with a raw data storage volume of more than 340 PB.Storage space is a major cost factor in HEP computing and the planned futureLHC Run 3 and 4 increase storage space demands by at least an order of mag-nitude.A cost effective storage model providing durability is Erasure Coding (EC). The decommissioning of CERN’s remote computer center (Wigner/Budapest) allows a reconsideration of the currently configured dual-replica strategy where EOS provides one replica in each computer center. EOS allows one to configure EC on a per file bases and exposes four differentredundancy levels with single, dual, triple and fourfold parity to select differentquality of service and variable costs.This paper will highlight tests which have been performed to migrate files ona production instance from dual-replica to various EC profiles. It will discuss performance and operational impact, and highlight various policy scenarios toselect the best file layout with respect to IO patterns, file age and file size.We will conclude with the current status and future optimizations, an evaluationof cost savings and discuss an erasure encoded EOS setup as a possible tapestorage replacement</p>
+<p>Also included some discussion of conversion and anticipated performance due to
+the EC storage design decisions.</p>
+<p>Conference <a href="https://www.epj-conferences.org/articles/epjconf/abs/2020/21/epjconf_chep2020_04008/epjconf_chep2020_04008.html">link</a></p>
+<p>Direct paper <a href="https://www.epj-conferences.org/articles/epjconf/pdf/2020/21/epjconf_chep2020_04008.pdf">link</a></p>
+
+
+    <footer>
+      
+        Posted on <a href="https:&#x2F;&#x2F;digikata.com&#x2F;erasure-coding-cern&#x2F;">December  4, 2020</a>
+        
+      
+    </footer>
+  </article>
+
+  
+    <nav>
+      <h2>What to do next?</h2>
+      
+        <p>Read the previous post: <a href="https:&#x2F;&#x2F;digikata.com&#x2F;blog-reboot&#x2F;" rel="next">Blog Reboot</a></p>
+      
+      
+
+      
+      
+    </nav>
+  
+
+
+    </main>
+
+    <footer>
+      
+        
+
+            <ul class="links">
+              
+              <li><a href="https:&#x2F;&#x2F;github.com&#x2F;jsonfry&#x2F;parchment">Zola Parchment theme</a></li>
+              
+              <li><a href="https:&#x2F;&#x2F;getzola.org">Made With Zola</a></li>
+              
+            </ul>
+
+        
+      
+
+       
+    </footer>
+
+    
+  <!-- Cloudflare Web Analytics -->
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6ab77b926eb94e3d839fd90c20f8194c"}'></script>
+  <!-- End Cloudflare Web Analytics -->
+
+  </body>
+</html>
