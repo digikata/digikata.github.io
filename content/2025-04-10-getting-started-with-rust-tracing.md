@@ -1,6 +1,7 @@
 +++
 title = "Getting Started with Rust Tracing"
 date = 2025-04-10
+template = "blog-article.html"
 +++
 
 The Tracing crate for Rust is a well-implemented tracing library for a wide
@@ -95,7 +96,8 @@ fn setup_tracing() {
     Subscriber::builder()
         .with_env_filter(env_filter)
         .with_timer(fmt::time::UtcTime::rfc_3339())
-        // .with_timer(fmt::time::uptime()) // different time formats could be selected
+        // .with_timer(fmt::time::uptime())
+        // different time formats could be selected
         .with_span_events(fmt::format::FmtSpan::CLOSE)
         .try_init()
         .expect("unable to setup tracing");
@@ -181,9 +183,14 @@ tracing::info!(name = a, "named param");
 tracing::info!(a, "quick named param");
 
 let dbg_val = DebugVal { value: 42 };
-tracing::info!(%dbg_val, "display print param"); // use display trait print
-tracing::info!(?dbg_val, "debug print param"); // use debug trait print
-tracing::info!(val = dbg_val.value, "named debug print param"); // named param w/ expression
+// use display trait print
+tracing::info!(%dbg_val, "display print param");
+
+// use debug trait print
+tracing::info!(?dbg_val, "debug print param");
+
+// named param w/ expression
+tracing::info!(val = dbg_val.value, "named debug print param");
 
 ```
 

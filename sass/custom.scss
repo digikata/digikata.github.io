@@ -1,0 +1,6 @@
+/* Custom styles for wider blog article layout */
+
+/* Override the main container max-width when showing wide articles */
+.l-main:has(.wide-article) {
+  max-width: 960px;
+}
