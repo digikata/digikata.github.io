@@ -5,22 +5,21 @@ _default :
 # publish merge master to pub branch, regen docs, commit and push
 publish: gen
 	#
-	# the pub dir is a submodule branch of this repo w/ just the output docs of
-	# the site
-	cd pub && git add site/
+	# pub/site is a repo setup to point to
+	cd pub/site && git add .
 	-cd pub && git commit -m "publish from master"
-	-cd pub && git push -f origin HEAD:pub
+	-cd pub && git push -f origin HEAD:main
 	# resync pub branch to this repo
-	git fetch 
-	git add -u
-	git commit -m "publish to pub"
-	git push
+	git fetch
+	# TODO: tag the publish at the top level repo
 
-# generate pages	
+
+# generate pages
 gen :
 	# github pages will only serve a subfolder with the option of docs
 	# odd but whatever
 	zola build -f -o pub/site/
+	echo digikata.com > pub/site/CNAME
 
 # serve local check
 serve :
