@@ -3,12 +3,12 @@ base_url = "https://digikata.com"
 output_dir = "pub"
 title = "Digikata Blog"
 description = "My underupdated blog"
+theme = "parchment"
 
 # Other basic settings
 compile_sass = true
 build_search_index = false
 default_language = "en"
-theme = "zola-pickles"
 minify_html = false
 
 # Feed settings
@@ -28,3 +28,10 @@ highlight_code = true
 highlight_theme = "solarized-light"
 
 [extra]
+ [[extra.footer_menu]]
+    [[extra.footer_menu.links]]
+      text = "Zola Parchment theme"
+      href = "https://github.com/jsonfry/parchment"
+    [[extra.footer_menu.links]]
+      text = "Made With Zola"
+      href = "https://getzola.org"

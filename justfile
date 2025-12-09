@@ -1,6 +1,6 @@
 
-default :
-	just -l
+_default :
+	just --list
 
 # publish merge master to pub branch, regen docs, commit and push
 publish: gen
@@ -18,7 +18,7 @@ publish: gen
 gen :
 	# github pages will only serve a subfolder with the option of docs
 	# odd but whatever
-	zola build -o pub/docs/
+	zola build -f -o pub/docs/
 
 # serve local check
 serve :
@@ -29,5 +29,6 @@ serve :
 		--base-url http://127.0.0.1 \
 		2>&1 | tee zola-serve.log
 
+# output zola-serve.log, assuming using local check
 log:
 	tail -n 20 zola-server.log

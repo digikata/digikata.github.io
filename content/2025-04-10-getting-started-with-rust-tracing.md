@@ -1,7 +1,7 @@
 +++
 title = "Getting Started with Rust Tracing"
 date = 2025-04-10
-template = "blog-article.html"
+template = "post-wide.html"
 +++
 
 The Tracing crate for Rust is a well-implemented tracing library for a wide
@@ -28,7 +28,7 @@ the logging level globally set level via `*RUST_LOG*`:
 - RUST_LOG=off
 
 **Note: 'off' is more a tracing logger state than a level, but read on to see
-how it is useful*
+how it is useful**
 
 `*RUST_LOG*` can specifiy more than a global logging level though. Multiple log
 **targets** each with individual levels can be specified. For example:

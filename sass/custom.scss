@@ -1,6 +1,28 @@
 /* Custom styles for wider blog article layout */
 
 /* Override the main container max-width when showing wide articles */
-.l-main:has(.wide-article) {
+main:has(.wide-article) {
   max-width: 960px;
+}
+
+/* Style heading anchors (permalink links) */
+.zola-anchor {
+  font-size: 0.7rem;
+  margin-left: 0.5rem;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.zola-anchor:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* Reduce code block font size */
+pre, pre code {
+  font-size: 0.85rem;
+}
+
+code {
+  font-size: 0.9rem;
 }
