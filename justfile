@@ -17,7 +17,6 @@ publish: gen
 	git commit -m "publish from master"
 	git push -f origin HEAD:main
 
-
 next-tag:
 	./scripts/git-next-tag.sh
 
