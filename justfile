@@ -4,15 +4,22 @@ _default :
 
 # publish merge master to pub branch, regen docs, commit and push
 publish: gen
-	#
-	# pub/site is a repo setup to point to
-	cd pub/site && git add .
-	-cd pub && git commit -m "publish from master"
-	-cd pub && git push -f origin HEAD:main
-	# resync pub branch to this repo
-	git fetch
-	# TODO: tag the publish at the top level repo
+	#!/bin/sh
+	# tag the publish at the top level repo
+	# with pub-yyyy-mm-dd-N (with the first publish w/o the -N, and following)
+	git tag $(just next-tag) -m "publish"
+	git push --tags
 
+	# push to digikata.github.io publish site
+	# pub/site is a repo setup to point to digikata.github.io repo
+	cd pub/site
+	git add .
+	git commit -m "publish from master"
+	git push -f origin HEAD:main
+
+
+next-tag:
+	./scripts/git-next-tag.sh
 
 # generate pages
 gen :
