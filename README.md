@@ -5,4 +5,4 @@
 
 `docs` is required by github static pages config
 
-
+See github -> settings -> `Pages` -> `Branch`

@@ -96,9 +96,9 @@ how it is useful</strong></p>
 <p>Three specifications were provided here, a global <code>info</code> level setting, for
 <code>tokio</code> show warn or higher level logs, and for <code>hyper</code> targets, turn them all
 off.</p>
-<p>Later in this writeup there is a deeper look at RUST_LOG syntax and how it
-connects to the tracing macro invocations, but this covers 80% of the common
-uses.</p>
+<p>Later in this writeup there is a deeper look at tracing/RUST_LOG syntax and
+how it connects to the tracing macro invocations, but this covers 80% of the
+common uses.</p>
 <h2 id="setting-up-tracing">Setting Up Tracing<a class="zola-anchor" href="#setting-up-tracing" aria-label="Anchor link for: setting-up-tracing">🔗</a></h2>
 <p>Basic setup requires three basic parts:</p>
 <ul>
@@ -133,7 +133,7 @@ tracing multiple times or places.</p>
 </span><span>    </span><span style="color:#859900;">use </span><span>tracing_subscriber::fmt;
 </span><span>
 </span><span>    </span><span style="color:#93a1a1;">// take value from RUST_LOG or use DEFAULT_RUST_LOG
-</span><span>    </span><span style="color:#268bd2;">const </span><span style="color:#cb4b16;">DEFAULT_RUST_LOG</span><span>: </span><span style="color:#859900;">&amp;</span><span style="color:#268bd2;">str </span><span>= </span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">trace,noisy=error</span><span style="color:#839496;">&quot;</span><span>;
+</span><span>    </span><span style="color:#268bd2;">const </span><span style="color:#cb4b16;">DEFAULT_RUST_LOG</span><span>: </span><span style="color:#859900;">&amp;</span><span style="color:#268bd2;">str </span><span>= </span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">error</span><span style="color:#839496;">&quot;</span><span>;
 </span><span>
 </span><span>    </span><span style="color:#268bd2;">let</span><span> env_filter = EnvFilter::try_from_default_env()
 </span><span>        .</span><span style="color:#859900;">unwrap_or_else</span><span>(|_| EnvFilter::new(</span><span style="color:#cb4b16;">DEFAULT_RUST_LOG</span><span>));
@@ -150,7 +150,7 @@ tracing multiple times or places.</p>
 </span></code></pre>
 <p>There are a lot of ways to structure outputs, including sending different
 logs to different outputs with <code>Layers</code>, see the function <code>setup_tracing_alt()</code>
-for an example. For now just take a look</p>
+for an example.</p>
 <h2 id="basic-logging-levels">Basic Logging Levels<a class="zola-anchor" href="#basic-logging-levels" aria-label="Anchor link for: basic-logging-levels">🔗</a></h2>
 <p>Tracing provides the familiar hierarchy of logging levels:</p>
 <pre data-lang="rust" style="background-color:#fdf6e3;color:#657b83;" class="language-rust "><code class="language-rust" data-lang="rust"><span>tracing::error</span><span style="color:#859900;">!</span><span>(</span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">plain error log</span><span style="color:#839496;">&quot;</span><span>);
