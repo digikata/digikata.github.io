@@ -1,4 +1,0 @@
-[submodule "pub"]
-	path = pub/static
-	url = git@github.com:digikata/digikata.github.io.git
-	branch = main

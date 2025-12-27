@@ -17,15 +17,20 @@ publish: gen
 	git commit -m "publish from master"
 	git push -f origin HEAD:main
 
-next-tag:
-	./scripts/git-next-tag.sh
-
 # generate pages
 gen :
 	# github pages will only serve a subfolder with the option of docs
 	# odd but whatever
-	zola build -f -o pub/site/
-	echo digikata.com > pub/site/CNAME
+	zola build -f -o branch/pub
+	echo digikata.com > branch/pub/CNAME
+
+# output zola-serve.log, assuming using local check
+log:
+	tail -n 20 zola-server.log
+
+# utility tgt
+next-tag:
+	./scripts/git-next-tag.sh
 
 # serve local check
 serve :
@@ -36,6 +41,10 @@ serve :
 		--base-url http://127.0.0.1 \
 		2>&1 | tee zola-serve.log
 
-# output zola-serve.log, assuming using local check
-log:
-	tail -n 20 zola-server.log
+# setup branch pub target
+setup:
+	#!/bin/sh
+	mkdir -p branch
+	cd branch
+	git clone .. ./pub --branch main
+

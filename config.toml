@@ -1,6 +1,6 @@
 # The URL the site will be built for
 base_url = "https://digikata.com"
-output_dir = "pub/site"
+output_dir = "pub/"
 title = "Digikata Blog"
 description = "My underupdated blog"
 theme = "parchment"

@@ -39,9 +39,9 @@ Three specifications were provided here, a global `info` level setting, for
 `tokio` show warn or higher level logs, and for `hyper` targets, turn them all
 off.
 
-Later in this writeup there is a deeper look at RUST_LOG syntax and how it
-connects to the tracing macro invocations, but this covers 80% of the common
-uses.
+Later in this writeup there is a deeper look at tracing/RUST_LOG syntax and
+how it connects to the tracing macro invocations, but this covers 80% of the
+common uses.
 
 ## Setting Up Tracing
 
@@ -88,7 +88,7 @@ fn setup_tracing() {
     use tracing_subscriber::fmt;
 
     // take value from RUST_LOG or use DEFAULT_RUST_LOG
-    const DEFAULT_RUST_LOG: &str = "trace,noisy=error";
+    const DEFAULT_RUST_LOG: &str = "error";
 
     let env_filter = EnvFilter::try_from_default_env()
         .unwrap_or_else(|_| EnvFilter::new(DEFAULT_RUST_LOG));
@@ -106,7 +106,7 @@ fn setup_tracing() {
 
 There are a lot of ways to structure outputs, including sending different
 logs to different outputs with `Layers`, see the function `setup_tracing_alt()`
-for an example. For now just take a look
+for an example.
 
 ## Basic Logging Levels
 
