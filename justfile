@@ -2,6 +2,21 @@
 _default :
 	just --list
 
+# generate pages
+gen :
+	# github pages will only serve a subfolder with the option of docs
+	# odd but whatever
+	zola build -f -o branch/docs
+	echo digikata.com > branch/docs/CNAME
+
+# output zola-serve.log, assuming using local check
+log:
+	tail -n 20 zola-server.log
+
+# utility tgt
+next-tag:
+	./scripts/git-next-tag.sh
+
 # publish merge master to pub branch, regen docs, commit and push
 publish: gen
 	#!/bin/sh
@@ -12,25 +27,10 @@ publish: gen
 
 	# push to digikata.github.io publish site
 	# pub/site is a repo setup to point to digikata.github.io repo
-	cd pub/site
+	cd branch/
 	git add .
 	git commit -m "publish from master"
-	git push -f origin HEAD:main
-
-# generate pages
-gen :
-	# github pages will only serve a subfolder with the option of docs
-	# odd but whatever
-	zola build -f -o branch/pub
-	echo digikata.com > branch/pub/CNAME
-
-# output zola-serve.log, assuming using local check
-log:
-	tail -n 20 zola-server.log
-
-# utility tgt
-next-tag:
-	./scripts/git-next-tag.sh
+	git push
 
 # serve local check
 serve :
@@ -41,10 +41,7 @@ serve :
 		--base-url http://127.0.0.1 \
 		2>&1 | tee zola-serve.log
 
-# setup branch pub target
+# setup branch doc target for publish
 setup:
 	#!/bin/sh
-	mkdir -p branch
-	cd branch
-	git clone .. ./pub --branch main
-
+	git clone . ./branch --branch published

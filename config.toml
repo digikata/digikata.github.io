@@ -1,6 +1,7 @@
 # The URL the site will be built for
 base_url = "https://digikata.com"
-output_dir = "pub/"
+# Actual publish dir is branch/docs, this defaults to local dev
+output_dir = "pub-dev"
 title = "Digikata Blog"
 description = "My underupdated blog"
 theme = "parchment"

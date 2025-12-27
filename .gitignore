@@ -4,3 +4,4 @@ zola-serve.log
 themes/*
 pub/site
 pub
+branch/
