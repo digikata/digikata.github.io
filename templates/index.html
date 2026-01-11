@@ -34,6 +34,20 @@
       {% endfor %}
     </nav>
   {% endif %}
+
+  {% if paginator %}
+    <nav class="pagination">
+      {% if paginator.previous %}
+        <a href="{{ paginator.previous }}">&laquo; Newer</a>
+      {% endif %}
+
+      <span>Page {{ paginator.current_index }} of {{ paginator.number_pagers }}</span>
+
+      {% if paginator.next %}
+        <a href="{{ paginator.next }}">Older &raquo;</a>
+      {% endif %}
+    </nav>
+  {% endif %}
 {% endblock content %}
 
 {% block body_end %}

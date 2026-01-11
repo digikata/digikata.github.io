@@ -1,0 +1,34 @@
+{% extends "index.html" %}
+
+{% macro format_date_no_year(date) -%}
+    {% set date_format = "%d %b" -%}
+    {{ date | date(format=date_format) -}}
+{% endmacro format_date_no_year %}
+
+{% block htmltitle %}
+  {{ term.name }} |
+{% endblock htmltitle %}
+
+{% block content %}
+  <article>
+    <h1>Posts tagged "{{ term.name }}"</h1>
+  </article>
+
+  {% if term.pages %}
+    <nav>
+      {% for year, year_pages in term.pages | group_by(attribute="year") %}
+        <h2 class="archive">{{ year }}</h2>
+        <ul class="archive">
+          {% for page in year_pages %}
+            <li>
+              <time datetime="{{page.date}}">{{self::format_date_no_year(date=page.date)}}</time>
+              <a href="{{ page.permalink }}">
+                {{ page.title }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endfor %}
+    </nav>
+  {% endif %}
+{% endblock content %}

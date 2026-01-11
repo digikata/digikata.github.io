@@ -1,0 +1,22 @@
+{% extends "index.html" %}
+
+{% block htmltitle %}
+  Tags |
+{% endblock htmltitle %}
+
+{% block content %}
+  <article>
+    <h1>All Tags</h1>
+    <nav>
+      <ul>
+        {% for term in terms %}
+          <li>
+            <a href="{{ term.permalink }}">
+              {{ term.name }} ({{ term.pages | length }})
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </article>
+{% endblock content %}

@@ -1,6 +1,6 @@
 +++
 title = "Posts"
-paginate_by = 5
+paginate_by = 7
 sort_by = "date"
 insert_anchor_links = "right"
 +++

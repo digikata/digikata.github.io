@@ -1,6 +1,6 @@
 +++
 title = "Blog Reboot"
-date = 2020-12-04
+date = 2020-12-03
 +++
 
 Time to reboot my blog. The old [site](http://digikata.blogspot.com) is still

@@ -26,3 +26,30 @@ pre, pre code {
 code {
   font-size: 0.9rem;
 }
+
+/* Pagination navigation */
+nav.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 0.5px solid var(--primary);
+  font-size: 0.95rem;
+}
+
+nav.pagination a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: var(--background-highlights);
+  border-radius: 4px;
+  transition: opacity 0.2s;
+}
+
+nav.pagination a:hover {
+  opacity: 0.7;
+}
+
+nav.pagination span {
+  color: #666;
+}

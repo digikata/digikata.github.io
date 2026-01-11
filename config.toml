@@ -24,9 +24,15 @@ feed_limit = 20
 #     ignored_content = ["*.{graphml,xlsx}", "temp.*"]
 ignored_content = []
 
-[markdown]
-highlight_code = true
-highlight_theme = "solarized-light"
+# Taxonomy configuration
+# Enable tags taxonomy - tags are defined in individual posts
+taxonomies = [
+    {name = "tags", feed = true},
+]
+
+# [markdown]
+# # highlight_code = true
+# highlight_theme = "solarized-light"
 
 [extra]
  [[extra.footer_menu]]
