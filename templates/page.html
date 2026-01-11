@@ -1,4 +1,4 @@
-{% extends "index.html" %}
+{% extends "base.html" %}
 {% import "macros.html" as macros %}
 
 {% block htmltitle %}
@@ -39,14 +39,22 @@
     </footer>
   </article>
 
-  {% if page.date %}{% if page.lower or page.higher %}
+  {% if page.date %}{% if page.lower or page.higher or page.taxonomies.tags %}
     <nav>
-      <h2>What to do next?</h2>
+      <h2>Navigation</h2>
       {% if page.higher %}
         <p>Read the previous post: <a href="{{ page.higher.permalink }}" rel="prev">{{ page.higher.title }}</a> ({{ page.higher.date | date(format="%B %e, %Y") }})</p>
       {% endif %}
       {% if page.lower %}
         <p>Read the next post: <a href="{{ page.lower.permalink }}" rel="next">{{ page.lower.title }} </a> ({{ page.lower.date | date(format="%B %e, %Y") }})</p>
+      {% endif %}
+
+      {% if page.taxonomies.tags %}
+        <p>Tags:
+        {% for tag in page.taxonomies.tags %}
+          <a href="{{ get_taxonomy_url(kind='tags', name=tag) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+        {% endfor %}
+        </p>
       {% endif %}
 
       {% block after_post_nav %}
