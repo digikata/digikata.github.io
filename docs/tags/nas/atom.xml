@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Digikata Blog - NAS</title>
+    <subtitle>My underupdated blog</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://digikata.com/tags/nas/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://digikata.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2009-03-24T00:00:00+00:00</updated>
+    <id>https://digikata.com/tags/nas/atom.xml</id>
+    <entry xml:lang="en">
+        <title>A Sheeva Plug Computer would make a great NAS</title>
+        <published>2009-03-24T00:00:00+00:00</published>
+        <updated>2009-03-24T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://digikata.com/2009-03-a-sheeva-plug-computer-would-make-a-great-nas/"/>
+        <id>https://digikata.com/2009-03-a-sheeva-plug-computer-would-make-a-great-nas/</id>
+        
+        <content type="html" xml:base="https://digikata.com/2009-03-a-sheeva-plug-computer-would-make-a-great-nas/">&lt;p&gt;&lt;a href=&quot;&#x2F;&#x2F;4.bp.blogspot.com&#x2F;_kAb6SmYM0ko&#x2F;ScmySUL7TlI&#x2F;AAAAAAAAADA&#x2F;3AEnp1PAq48&#x2F;s1600-h&#x2F;sheevaplug.jpg&quot;&gt;&lt;img src=&quot;&#x2F;&#x2F;4.bp.blogspot.com&#x2F;_kAb6SmYM0ko&#x2F;ScmySUL7TlI&#x2F;AAAAAAAAADA&#x2F;3AEnp1PAq48&#x2F;s320&#x2F;sheevaplug.jpg&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
+I&#x27;ve been looking at the &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.marvell.com&#x2F;products&#x2F;embedded_processors&#x2F;developer&#x2F;kirkwood&#x2F;sheevaplug.jsp&quot;&gt;Sheeva Plug dev kit&lt;&#x2F;a&gt; from Marvell. It seems to be an ARM core System-on-Chip (SoC), Linux compatible, with an interesting combo of device controllers hanging off of it, including ethernet, USB, and SATA ports.&lt;&#x2F;p&gt;
+&lt;p&gt;The dev kit seems to be the size of a large wall wart and part of Marvell&#x27;s &quot;Plug Computing&quot; marketing drive. Not sure about plug computing bit, but I&#x27;d love to fit the board into a small two or three bay external drive enclosure, or maybe a drive &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.geeks.com&#x2F;details.asp?invtid=EN391&amp;amp;cat=CSE&quot;&gt;dock&lt;&#x2F;a&gt;.  Running a minimal linux system, a looks like it would be a nice way to setup a local Network Attached Storage (NAS) backup system with enough smarts to do offsite backups to &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;aws.amazon.com&#x2F;s3&#x2F;&quot;&gt;Amazon S3&lt;&#x2F;a&gt; or Rackspace&#x27;s &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.mosso.com&#x2F;cloudfiles.jsp&quot;&gt;Mosso&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

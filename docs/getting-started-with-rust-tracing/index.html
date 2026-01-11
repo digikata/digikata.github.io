@@ -16,7 +16,6 @@
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
     
-  
       <link
         rel="stylesheet"
         type="text/css"
@@ -24,13 +23,6 @@
         href="https://digikata.com/style.css?h=ce0d738084ebd68ca8f7"
       />
     
-  <link
-    rel="stylesheet"
-    type="text/css"
-    media="all"
-    href="https://digikata.com/custom.css?h=799f4bae0b649649d358"
-  />
-
 
     
       
@@ -46,6 +38,7 @@
         <ul>
           
           <li><a href="https:&#x2F;&#x2F;digikata.com">Posts</a></li>
+          <li><a href="https://digikata.com/tags">Tags</a></li>
           
             
             <li><a href="https:&#x2F;&#x2F;digikata.com&#x2F;about&#x2F;">About</a></li>
@@ -109,10 +102,10 @@ rust application</li>
 <li>using the tracing macros throughout the code</li>
 </ul>
 <h3 id="tracing-cargo-toml-dependencies">Tracing Cargo.toml dependencies<a class="zola-anchor" href="#tracing-cargo-toml-dependencies" aria-label="Anchor link for: tracing-cargo-toml-dependencies">🔗</a></h3>
-<pre data-lang="toml" style="background-color:#fdf6e3;color:#657b83;" class="language-toml "><code class="language-toml" data-lang="toml"><span>[</span><span style="color:#b58900;">dependencies</span><span>]
-</span><span style="color:#268bd2;">tracing </span><span>= </span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">0.1</span><span style="color:#839496;">&quot;
-</span><span style="color:#268bd2;">tracing-subscriber </span><span>= { </span><span style="color:#268bd2;">version </span><span>= </span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">0.3</span><span style="color:#839496;">&quot;</span><span>, </span><span style="color:#268bd2;">features </span><span>= [</span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">env-filter</span><span style="color:#839496;">&quot;</span><span>, </span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">fmt</span><span style="color:#839496;">&quot;</span><span>, </span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">time</span><span style="color:#839496;">&quot;</span><span>] }
-</span></code></pre>
+<pre><code data-lang="toml">[dependencies]
+tracing = &quot;0.1&quot;
+tracing-subscriber = { version = &quot;0.3&quot;, features = [&quot;env-filter&quot;, &quot;fmt&quot;, &quot;time&quot;] }
+</code></pre>
 <p>The <code>env-filter</code> feature is what enables dynamically applying different tracing
 settings from the RUST_LOG</p>
 <h3 id="initializing-the-tracing-system">Initializing the tracing system<a class="zola-anchor" href="#initializing-the-tracing-system" aria-label="Anchor link for: initializing-the-tracing-system">🔗</a></h3>
@@ -123,122 +116,122 @@ setup the tracing configuration as the global tracing configuration.  Setting
 up the tracing layer is global, and its generally not recommended to setup
 tracing multiple times or places.</p>
 <p>The simplest initialization is this:</p>
-<pre data-lang="rust" style="background-color:#fdf6e3;color:#657b83;" class="language-rust "><code class="language-rust" data-lang="rust"><span style="color:#268bd2;">fn </span><span style="color:#b58900;">main</span><span>() {
-</span><span>    tracing_subscriber::fmt::init();
-</span><span>}
-</span></code></pre>
-<pre data-lang="rust" style="background-color:#fdf6e3;color:#657b83;" class="language-rust "><code class="language-rust" data-lang="rust"><span style="color:#268bd2;">fn </span><span style="color:#b58900;">setup_tracing</span><span>() {
-</span><span>    </span><span style="color:#859900;">use </span><span>tracing_subscriber::EnvFilter;
-</span><span>    </span><span style="color:#859900;">use </span><span>tracing_subscriber::fmt::Subscriber;
-</span><span>    </span><span style="color:#859900;">use </span><span>tracing_subscriber::fmt;
-</span><span>
-</span><span>    </span><span style="color:#93a1a1;">// take value from RUST_LOG or use DEFAULT_RUST_LOG
-</span><span>    </span><span style="color:#268bd2;">const </span><span style="color:#cb4b16;">DEFAULT_RUST_LOG</span><span>: </span><span style="color:#859900;">&amp;</span><span style="color:#268bd2;">str </span><span>= </span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">error</span><span style="color:#839496;">&quot;</span><span>;
-</span><span>
-</span><span>    </span><span style="color:#268bd2;">let</span><span> env_filter = EnvFilter::try_from_default_env()
-</span><span>        .</span><span style="color:#859900;">unwrap_or_else</span><span>(|_| EnvFilter::new(</span><span style="color:#cb4b16;">DEFAULT_RUST_LOG</span><span>));
-</span><span>
-</span><span>    Subscriber::builder()
-</span><span>        .</span><span style="color:#859900;">with_env_filter</span><span>(env_filter)
-</span><span>        .</span><span style="color:#859900;">with_timer</span><span>(fmt::time::UtcTime::rfc_3339())
-</span><span>        </span><span style="color:#93a1a1;">// .with_timer(fmt::time::uptime())
-</span><span>        </span><span style="color:#93a1a1;">// different time formats could be selected
-</span><span>        .</span><span style="color:#859900;">with_span_events</span><span>(fmt::format::FmtSpan::</span><span style="color:#cb4b16;">CLOSE</span><span>)
-</span><span>        .</span><span style="color:#859900;">try_init</span><span>()
-</span><span>        .</span><span style="color:#859900;">expect</span><span>(</span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">unable to setup tracing</span><span style="color:#839496;">&quot;</span><span>);
-</span><span>}
-</span></code></pre>
+<pre><code data-lang="rust">fn main() {
+    tracing_subscriber::fmt::init();
+}
+</code></pre>
+<pre><code data-lang="rust">fn setup_tracing() {
+    use tracing_subscriber::EnvFilter;
+    use tracing_subscriber::fmt::Subscriber;
+    use tracing_subscriber::fmt;
+
+    // take value from RUST_LOG or use DEFAULT_RUST_LOG
+    const DEFAULT_RUST_LOG: &amp;str = &quot;error&quot;;
+
+    let env_filter = EnvFilter::try_from_default_env()
+        .unwrap_or_else(|_| EnvFilter::new(DEFAULT_RUST_LOG));
+
+    Subscriber::builder()
+        .with_env_filter(env_filter)
+        .with_timer(fmt::time::UtcTime::rfc_3339())
+        // .with_timer(fmt::time::uptime())
+        // different time formats could be selected
+        .with_span_events(fmt::format::FmtSpan::CLOSE)
+        .try_init()
+        .expect(&quot;unable to setup tracing&quot;);
+}
+</code></pre>
 <p>There are a lot of ways to structure outputs, including sending different
 logs to different outputs with <code>Layers</code>, see the function <code>setup_tracing_alt()</code>
 for an example.</p>
 <h2 id="basic-logging-levels">Basic Logging Levels<a class="zola-anchor" href="#basic-logging-levels" aria-label="Anchor link for: basic-logging-levels">🔗</a></h2>
 <p>Tracing provides the familiar hierarchy of logging levels:</p>
-<pre data-lang="rust" style="background-color:#fdf6e3;color:#657b83;" class="language-rust "><code class="language-rust" data-lang="rust"><span>tracing::error</span><span style="color:#859900;">!</span><span>(</span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">plain error log</span><span style="color:#839496;">&quot;</span><span>);
-</span><span>tracing::warn</span><span style="color:#859900;">!</span><span>(</span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">plain warn log</span><span style="color:#839496;">&quot;</span><span>);
-</span><span>tracing::info</span><span style="color:#859900;">!</span><span>(</span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">plain info log</span><span style="color:#839496;">&quot;</span><span>);
-</span><span>tracing::debug</span><span style="color:#859900;">!</span><span>(</span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">plain debug log</span><span style="color:#839496;">&quot;</span><span>);
-</span><span>tracing::trace</span><span style="color:#859900;">!</span><span>(</span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">plain trace log</span><span style="color:#839496;">&quot;</span><span>);
-</span></code></pre>
+<pre><code data-lang="rust">tracing::error!(&quot;plain error log&quot;);
+tracing::warn!(&quot;plain warn log&quot;);
+tracing::info!(&quot;plain info log&quot;);
+tracing::debug!(&quot;plain debug log&quot;);
+tracing::trace!(&quot;plain trace log&quot;);
+</code></pre>
 <p>You can set the logging levels, via <code>RUST_LOG</code>, eg if your binary is named
 <code>app</code> <code>RUST_LOG=warn app</code>, will log all <code>warn</code> level and above items.</p>
 <h2 id="a-sample-log-output-and-more-rust-log">A Sample Log Output and more RUST_LOG<a class="zola-anchor" href="#a-sample-log-output-and-more-rust-log" aria-label="Anchor link for: a-sample-log-output-and-more-rust-log">🔗</a></h2>
 <p>If you run <code>cargo run</code> in the <code>tracing-quickstart</code> project, you'll see
 some lines that look like this:</p>
-<pre style="background-color:#fdf6e3;color:#657b83;"><code><span>0.000242940s  INFO my_span: tracing_quickstart: inside span
-</span><span>0.000247360s  INFO my_span: my_app: custom, inside span
-</span><span>0.000252570s  INFO my_span: tracing_quickstart: close time.busy=9.49µs time.idle=1.49µs
-</span><span>0.000228990s  INFO my_target: targeted log
-</span><span>0.000231860s  WARN my_target: targeted log with parameter parameter
-</span><span>0.000234600s  INFO my_app::level2: multi level targetd log
-</span><span>0.000237540s  INFO my_app::sub2: multi level targetd log
-</span></code></pre>
+<pre><code>0.000242940s  INFO my_span: tracing_quickstart: inside span
+0.000247360s  INFO my_span: my_app: custom, inside span
+0.000252570s  INFO my_span: tracing_quickstart: close time.busy=9.49µs time.idle=1.49µs
+0.000228990s  INFO my_target: targeted log
+0.000231860s  WARN my_target: targeted log with parameter parameter
+0.000234600s  INFO my_app::level2: multi level targetd log
+0.000237540s  INFO my_app::sub2: multi level targetd log
+</code></pre>
 <p>Tracing and <code>RUST_LOG</code> let you specify targeted logs and log levels. Multiple
 scopes can be targeted, each with a different level. The tracing-subscriber
-refers to this as a <a href="https://docs.rs/tracing-subscriber/latest/tracing_subscriber/filter/struct.EnvFilter.html#directives">Directive</a>
+refers to this as a <a rel="external" href="https://docs.rs/tracing-subscriber/latest/tracing_subscriber/filter/struct.EnvFilter.html#directives">Directive</a>
 For example, <code>RUST_LOG=off,my_target cargo run</code> will reduce the output to:</p>
-<pre style="background-color:#fdf6e3;color:#657b83;"><code><span>0.000091780s  INFO my_target: targeted log
-</span><span>0.000104580s  WARN my_target: targeted log with parameter parameter
-</span></code></pre>
+<pre><code>0.000091780s  INFO my_target: targeted log
+0.000104580s  WARN my_target: targeted log with parameter parameter
+</code></pre>
 <p>Each spec is separated by a <code>,</code>, and can change the output level. <code>off</code> or one
 of the log levels <code>error</code>, <code>warn</code>, <code>info</code>, <code>debug</code>, <code>trace</code> by itself will
 globally apply, but the <code>my_target</code> above, turns logging back on for those lines.</p>
 <p><code>RUST_LOG=off,my_target=warn cargo run</code> reduces the log output to a single line.</p>
-<pre style="background-color:#fdf6e3;color:#657b83;"><code><span>0.000104580s  WARN my_target: targeted log with parameter parameter
-</span></code></pre>
-<p><em>Specific spans and fields can be specified too, <code>target[span{field=value}]=level</code>, see <a href="https://docs.rs/tracing-subscriber/latest/tracing_subscriber/filter/struct.EnvFilter.html#directives">Directives</a></em></p>
+<pre><code>0.000104580s  WARN my_target: targeted log with parameter parameter
+</code></pre>
+<p><em>Specific spans and fields can be specified too, <code>target[span{field=value}]=level</code>, see <a rel="external" href="https://docs.rs/tracing-subscriber/latest/tracing_subscriber/filter/struct.EnvFilter.html#directives">Directives</a></em></p>
 <h2 id="creating-targets">Creating targets<a class="zola-anchor" href="#creating-targets" aria-label="Anchor link for: creating-targets">🔗</a></h2>
 <p>What are targets? They are useful tags to associate connected log lines. For example,
 you can mark certain operations with similar targets. They can be explictly named
 and heirarchically organized. Each level can be selected in <code>RUST_LOG</code>.</p>
-<pre style="background-color:#fdf6e3;color:#657b83;"><code><span>tracing::info!(target: &quot;my_target&quot;, &quot;targeted log&quot;);
-</span><span>tracing::warn!(target: &quot;my_target&quot;, &quot;targeted log with parameter {}&quot;, &quot;parameter&quot;);
-</span><span>tracing::info!(target: &quot;my_app::level2&quot;, &quot;multi level targetd log&quot;);
-</span><span>tracing::info!(target: &quot;my_app::sub2&quot;, &quot;multi level targetd log&quot;);
-</span></code></pre>
+<pre><code>tracing::info!(target: &quot;my_target&quot;, &quot;targeted log&quot;);
+tracing::warn!(target: &quot;my_target&quot;, &quot;targeted log with parameter {}&quot;, &quot;parameter&quot;);
+tracing::info!(target: &quot;my_app::level2&quot;, &quot;multi level targetd log&quot;);
+tracing::info!(target: &quot;my_app::sub2&quot;, &quot;multi level targetd log&quot;);
+</code></pre>
 <h2 id="structured-event-parameters">Structured Event Parameters<a class="zola-anchor" href="#structured-event-parameters" aria-label="Anchor link for: structured-event-parameters">🔗</a></h2>
 <p>Tracing allows marking parameters to be logged in a systematic way.</p>
-<pre data-lang="rust" style="background-color:#fdf6e3;color:#657b83;" class="language-rust "><code class="language-rust" data-lang="rust"><span style="color:#268bd2;">let</span><span> a = </span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">Earth</span><span style="color:#839496;">&quot;</span><span>;
-</span><span>tracing::info</span><span style="color:#859900;">!</span><span>(</span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">regular println usage a={}</span><span style="color:#839496;">&quot;</span><span>, a);
-</span><span>tracing::info</span><span style="color:#859900;">!</span><span>(name = a, </span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">named param</span><span style="color:#839496;">&quot;</span><span>);
-</span><span>tracing::info</span><span style="color:#859900;">!</span><span>(a, </span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">quick named param</span><span style="color:#839496;">&quot;</span><span>);
-</span><span>
-</span><span style="color:#268bd2;">let</span><span> dbg_val = DebugVal { value: </span><span style="color:#6c71c4;">42 </span><span>};
-</span><span style="color:#93a1a1;">// use display trait print
-</span><span>tracing::info</span><span style="color:#859900;">!</span><span>(%dbg_val, </span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">display print param</span><span style="color:#839496;">&quot;</span><span>);
-</span><span>
-</span><span style="color:#93a1a1;">// use debug trait print
-</span><span>tracing::info</span><span style="color:#859900;">!</span><span>(</span><span style="color:#859900;">?</span><span>dbg_val, </span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">debug print param</span><span style="color:#839496;">&quot;</span><span>);
-</span><span>
-</span><span style="color:#93a1a1;">// named param w/ expression
-</span><span>tracing::info</span><span style="color:#859900;">!</span><span>(val = dbg_val.value, </span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">named debug print param</span><span style="color:#839496;">&quot;</span><span>);
-</span><span>
-</span></code></pre>
+<pre><code data-lang="rust">let a = &quot;Earth&quot;;
+tracing::info!(&quot;regular println usage a={}&quot;, a);
+tracing::info!(name = a, &quot;named param&quot;);
+tracing::info!(a, &quot;quick named param&quot;);
+
+let dbg_val = DebugVal { value: 42 };
+// use display trait print
+tracing::info!(%dbg_val, &quot;display print param&quot;);
+
+// use debug trait print
+tracing::info!(?dbg_val, &quot;debug print param&quot;);
+
+// named param w/ expression
+tracing::info!(val = dbg_val.value, &quot;named debug print param&quot;);
+
+</code></pre>
 <p>results in:</p>
-<pre style="background-color:#fdf6e3;color:#657b83;"><code><span>0.000111930s  INFO tracing_quickstart: regular println usage a=Earth
-</span><span>0.000115370s  INFO tracing_quickstart: named param name=&quot;Earth&quot;
-</span><span>0.000119270s  INFO tracing_quickstart: quick named param a=&quot;Earth&quot;
-</span><span>0.000123860s  INFO tracing_quickstart: display print param dbg_val=Val: 42
-</span><span>0.000127890s  INFO tracing_quickstart: debug print param dbg_val=DebugVal { value: 42 }
-</span><span>0.000132160s  INFO tracing_quickstart: named debug print param val=42
-</span></code></pre>
-<p>See the <a href="https://docs.rs/tracing/latest/tracing#recording-fields">Recording Fields</a> section
+<pre><code>0.000111930s  INFO tracing_quickstart: regular println usage a=Earth
+0.000115370s  INFO tracing_quickstart: named param name=&quot;Earth&quot;
+0.000119270s  INFO tracing_quickstart: quick named param a=&quot;Earth&quot;
+0.000123860s  INFO tracing_quickstart: display print param dbg_val=Val: 42
+0.000127890s  INFO tracing_quickstart: debug print param dbg_val=DebugVal { value: 42 }
+0.000132160s  INFO tracing_quickstart: named debug print param val=42
+</code></pre>
+<p>See the <a rel="external" href="https://docs.rs/tracing/latest/tracing#recording-fields">Recording Fields</a> section
 of the docs for more detail.</p>
 <h2 id="spans-for-context">Spans for Context<a class="zola-anchor" href="#spans-for-context" aria-label="Anchor link for: spans-for-context">🔗</a></h2>
 <p>Spans create execution contexts, providing structure to your logs:</p>
-<pre data-lang="rust" style="background-color:#fdf6e3;color:#657b83;" class="language-rust "><code class="language-rust" data-lang="rust"><span style="color:#268bd2;">let</span><span> span = tracing::span</span><span style="color:#859900;">!</span><span>(tracing::Level::</span><span style="color:#cb4b16;">INFO</span><span>, </span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">my_span</span><span style="color:#839496;">&quot;</span><span>);
-</span><span style="color:#268bd2;">let</span><span> _guard = span.</span><span style="color:#859900;">enter</span><span>();
-</span><span>tracing::info</span><span style="color:#859900;">!</span><span>(</span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">inside span</span><span style="color:#839496;">&quot;</span><span>); </span><span style="color:#93a1a1;">// This log will be associated with &quot;my_span&quot;
-</span></code></pre>
+<pre><code data-lang="rust">let span = tracing::span!(tracing::Level::INFO, &quot;my_span&quot;);
+let _guard = span.enter();
+tracing::info!(&quot;inside span&quot;); // This log will be associated with &quot;my_span&quot;
+</code></pre>
 <p>When run this generates</p>
-<pre style="background-color:#fdf6e3;color:#657b83;"><code><span>0.000205640s  INFO my_span: tracing_quickstart: inside span
-</span><span>0.000210240s  INFO my_span: my_app: custom, inside span
-</span><span>0.000215700s  INFO my_span: tracing_quickstart: close time.busy=9.89µs time.idle=1.48µs
-</span></code></pre>
+<pre><code>0.000205640s  INFO my_span: tracing_quickstart: inside span
+0.000210240s  INFO my_span: my_app: custom, inside span
+0.000215700s  INFO my_span: tracing_quickstart: close time.busy=9.89µs time.idle=1.48µs
+</code></pre>
 <h2 id="conclusion">Conclusion<a class="zola-anchor" href="#conclusion" aria-label="Anchor link for: conclusion">🔗</a></h2>
 <p>There are a lot more nuances of the tracing crate. Only the bare basics are
 outlined here. Some interesting, but still basic, variations are provided in the
 <a href="https://digikata.com/getting-started-with-rust-tracing/(https://github.com/digikata/tracing-quickstart)"><code>tracing-quickstart</code> repository</a>,
-but there are many richer examples in the<a href="https://docs.rs/tracing">tracing documentation</a>
+but there are many richer examples in the<a rel="external" href="https://docs.rs/tracing">tracing documentation</a>
 and overall rust ecosystem.</p>
 
 
@@ -252,10 +245,12 @@ and overall rust ecosystem.</p>
 
   
     <nav>
-      <h2>What to do next?</h2>
+      <h2>Navigation</h2>
+      
+        <p>Read the previous post: <a href="https:&#x2F;&#x2F;digikata.com&#x2F;links-testing-distributed-sys&#x2F;" rel="prev">Resource: Testing Distributed Systems</a> (March 10, 2022)</p>
       
       
-        <p>Read the next post: <a c href="https:&#x2F;&#x2F;digikata.com&#x2F;links-testing-distributed-sys&#x2F;" rel="prev">Resource: Testing Distributed Systems </a></p>
+
       
 
       
@@ -287,9 +282,6 @@ and overall rust ecosystem.</p>
     </footer>
 
     
-  <!-- Cloudflare Web Analytics -->
-  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6ab77b926eb94e3d839fd90c20f8194c"}'></script>
-  <!-- End Cloudflare Web Analytics -->
-
+    
   </body>
 </html>

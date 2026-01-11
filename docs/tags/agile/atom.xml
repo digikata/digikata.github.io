@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Digikata Blog - agile</title>
+    <subtitle>My underupdated blog</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://digikata.com/tags/agile/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://digikata.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2008-08-30T00:00:00+00:00</updated>
+    <id>https://digikata.com/tags/agile/atom.xml</id>
+    <entry xml:lang="en">
+        <title>History of Agile Software Principles</title>
+        <published>2008-08-30T00:00:00+00:00</published>
+        <updated>2008-08-30T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://digikata.com/2008-08-history-of-agile-software-principles/"/>
+        <id>https://digikata.com/2008-08-history-of-agile-software-principles/</id>
+        
+        <content type="html" xml:base="https://digikata.com/2008-08-history-of-agile-software-principles/">&lt;p&gt;In an &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.stsc.hill.af.mil&#x2F;crosstalk&#x2F;2008&#x2F;08&#x2F;0808Cockburn.html&quot;&gt;article&lt;&#x2F;a&gt; inside Crosstalk, the Air Force Journal of Software Engineering, &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Alistair_Cockburn&quot;&gt;Alistar Cockburn&lt;&#x2F;a&gt; reviews a 1968 NATO software engineering conference. He observes that many of the core beliefs and techniques of the modern Agile software development movement aren&#x27;t such recent developments after all. Both the 1968 conference and the Agile movement focus on the central effect of people over processes.&lt;&#x2F;p&gt;
+&lt;p&gt;I understand that there is a strong temptation to develop processes with a mindset that success will result when all that is needed is to capture the collective history of all past processes within the current one. Over time, I believe that approach is guaranteed to be ineffective.&lt;&#x2F;p&gt;
+&lt;p&gt;It&#x27;s not that you don&#x27;t want to develop processes, but if one focuses on the development of process before people, your process will build up unwieldyness, and the people applying it will either lose confidence in the process, or worse, may not recognize why the steps they are taking are going wrong. To capture knowledge of past projects, you need to allow time to writeup retrospectives. To transfer the knowledge, you want to encourage time for less-experienced engineers to talk and read about past projects. Then going forward, people are better informed to create and apply approaches to the problem at hand.&lt;&#x2F;p&gt;
+&lt;p&gt;It takes people to figure out if things are working. For example, I don&#x27;t think that most aerospace software development can blindly follow the iterate smaller &#x2F; continuous flow focus of the current Agile software development. They need to consider that they&#x27;re not purely software systems, and that costs of design-reversals can be much higher when hardware and physical environments are in play.&lt;&#x2F;p&gt;
+&lt;p&gt;p.s. if you new to the term Agile Software development see the &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;agilemanifesto.org&#x2F;&quot;&gt;Agile Manifesto&lt;&#x2F;a&gt; or search on &quot;Agile Software&quot;, or &quot;Lean Software&quot; or post a comment.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

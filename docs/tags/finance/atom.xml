@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Digikata Blog - finance</title>
+    <subtitle>My underupdated blog</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://digikata.com/tags/finance/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://digikata.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2010-06-14T00:00:00+00:00</updated>
+    <id>https://digikata.com/tags/finance/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Counteracting High Speed Traders</title>
+        <published>2010-06-14T00:00:00+00:00</published>
+        <updated>2010-06-14T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://digikata.com/2010-06-counteracting-high-speed-traders/"/>
+        <id>https://digikata.com/2010-06-counteracting-high-speed-traders/</id>
+        
+        <content type="html" xml:base="https://digikata.com/2010-06-counteracting-high-speed-traders/">&lt;p&gt;On the Planet Money &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.npr.org&#x2F;blogs&#x2F;money&#x2F;&quot;&gt;show&lt;&#x2F;a&gt;, there&#x27;s been discussion about the practice of High Speed Trading. This is where traders use computers and high-speed connections to the stock market to analyze trade data and put in trades making penny or sub-penny profits on transaction trends by responding faster than other players.&lt;&#x2F;p&gt;
+&lt;p&gt;So, for example, if someone is trying to make a buy of stocks, and they can&#x27;t get them in one lot, their first partial buy might trigger an algorithm in a computer. Then the computer might use it&#x27;s high speed trading connection to buy up available lots of the stock that it anticipates will soon go up by a small tick, reselling to a slower moving buyer trying to close out the complete order with a slower connection.&lt;&#x2F;p&gt;
+&lt;p&gt;Institutional investors, such as those managing your pension mutual funds, are understandably wary of the practice because they&#x27;re frequently the ones whose transactions become marginally more expensive due to high-speed trading algorithms. So how might they neutralize the effects of high-speed traders?&lt;&#x2F;p&gt;
+&lt;p&gt;I see an opening where a larger traders could help to neutralize or even marginally improve transaction costs due high-speed traders via counter trades.  In aircraft control theory, there is a phenomenon called &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Pilot-induced_oscillation&quot;&gt;pilot induced oscillation&lt;&#x2F;a&gt; (PIO). This is where a pilot tries to damp out an oscillation, but because they&#x27;re responding with the right response, but out of phase, the situation ends up inducing larger oscillations in the path of the aircraft. Usually, aircraft designers (and pilots) are looking to avoid PIO, but a counter trade would be trying for the opposite by inducing high speed trading responses.&lt;&#x2F;p&gt;
+&lt;p&gt;The basic idea would be to issue a number of counter trades to trigger the high speed trading algorithms, then use the window of movement in price that the high-speed algorithm creates to run your intended overall transaction. For example, if you were selling, make a few buys first. Let the high speed algos try to drive the price up by buying up all the shares at that local price level, then you would issue your sale at a higher transaction price. If the high speed trading algorithms stay agressive, then you can continue to open windows for your intended transactions. Alternately if the high-speed algorithms are dialed down to become less aggressive then your marginal losses from the actions are drastically reduced. Either way, counter trading would be one way to bound the high-speed trading algorithms.&lt;&#x2F;p&gt;
+&lt;p&gt;Update: in the same vein, here&#x27;s an &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.theatlantic.com&#x2F;science&#x2F;archive&#x2F;2010&#x2F;08&#x2F;market-data-firm-spots-the-tracks-of-bizarre-robot-traders&#x2F;60829&#x2F;&quot;&gt;article&lt;&#x2F;a&gt; in the Atlantic about how odd trading patterns have been identified in trading data, presumeably from high frequency trading bots.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Telephones over the Internet, a Skype vs Gizmo5 comparison</title>
+        <published>2009-02-26T00:00:00+00:00</published>
+        <updated>2009-02-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://digikata.com/2009-02-telephones-over-the-internet-a-skype-vs-gizmo5-com/"/>
+        <id>https://digikata.com/2009-02-telephones-over-the-internet-a-skype-vs-gizmo5-com/</id>
+        
+        <content type="html" xml:base="https://digikata.com/2009-02-telephones-over-the-internet-a-skype-vs-gizmo5-com/">&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.flickr.com&#x2F;photos&#x2F;adselwood&#x2F;&quot;&gt;&lt;img src=&quot;&#x2F;&#x2F;4.bp.blogspot.com&#x2F;_kAb6SmYM0ko&#x2F;SbmtOR0_L0I&#x2F;AAAAAAAAAC4&#x2F;ZoiZC2HYmhM&#x2F;s200&#x2F;network-tangle.jpg&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
+Engineers are always trying to optimize value - sometime&#x27;s we choose the wrong values to optimize on, but thats a discussion for another day. Recently, I&#x27;ve been looking through different VoIP services to see how viable they are as ways of augmenting or replacing my residential land-line phone service. VoIP is Voice over Internet Protocol. The per-minute prices for VoIP are free-to-low, with direct computer-to-computer calls typically free and computer-to-phone service typically at a low monthly or per-minute fee.  A computer-to-phone call is often called PSTN or Public Switch Telephone Network termination. There are also other variations on this where you call and the service calls back but, for me, those services are more hassle than they&#x27;re worth.&lt;&#x2F;p&gt;
+&lt;p&gt;VoIP phoning isn&#x27;t as reliable as regular landline phones. e.g. in a power outage, you have to have your own backup to run the computer or other devices needed to connect to the internet -- and even that is futile if you net connection goes down with the power. Between the power and issues about getting correct 911 service, etc, VoIP is something I see as a way to augment my current service by reducing cost for non-emergency calls.&lt;&#x2F;p&gt;
+&lt;p&gt;So far, after looking through a number of different options, &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;skype.com&#x2F;&quot;&gt;Skype&lt;&#x2F;a&gt; and &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;gizmo5.com&#x2F;&quot;&gt;Gizmo5&lt;&#x2F;a&gt; are two services of interest. They break up their costs in different ways, and there are various technical and market aspects that might make one favor one vs another. For example, I like that Gizmo5 uses standard communication protocols to initiate and transfer calls while Skype uses more proprietary methods. They also both offer other services that I wouldn&#x27;t use very often, such as video chat.&lt;&#x2F;p&gt;
+&lt;p&gt;Incidentally, one thing that both work with is my Ipod Touch 2G. An Ipod application called &quot;Fring&quot; allows calls over WiFi using a number of VoIP services. It&#x27;s a geeky feature to play with but there constraints there that make me think that this won&#x27;t be the way I put the most hours on a VoIP service. More on that later maybe, but I&#x27;ll just close out talk of Fring with the statement that it&#x27;s use of standard protocols such as a SIP VoIP interface is what allows Gizmo5 to work with Fring. This is one reason to like standards&lt;&#x2F;p&gt;
+&lt;p&gt;As of this writing, both offer service-to-service calls for free. So really I&#x27;m comparing the cost of making computer to phone calls. Gizmo5 offers bridging calls to Skype for a flat fee for time. This seems somewhat unreliable, presumably because Skype doesn&#x27;t encourage this. Skype has a larger user base, but is owned by questionably consumer friendly Ebay (also owner of PayPal).&lt;&#x2F;p&gt;
+&lt;p&gt;In terms of flat rate service, Gizmo5 offers 1.9 ct&#x2F;min rates while Skypes are 2.1ct&#x2F;min. Skype also charges a connection fee of 3.5 cents. So for flat rate service Skype loses out pricewise. Skype, however, also offers unlimited calls for $2.95&#x2F;mo. So the breakpoint is ~155minutes for Gizmo5 vs skype. Meaning if you plan to consistently use more than 155 minutes a month on a service like this then Skype will be cheaper. Since this is an addon side service, I think I&#x27;m going with Gizmo5 - I liked their use of open connection protocols anyway.&lt;&#x2F;p&gt;
+&lt;p&gt;Since I first wrote this post the LA Times ran an &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.latimes.com&#x2F;business&#x2F;la-fi-lazarus8-2009mar08,0,4417313.column&quot;&gt;article&lt;&#x2F;a&gt; on a study citing the average cost that consumers pay for cellular service -- over $3 per minute wow...&lt;&#x2F;p&gt;
+&lt;p&gt;(photo by: &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.flickr.com&#x2F;photos&#x2F;adselwood&#x2F;&quot;&gt;asdelwood&lt;&#x2F;a&gt;, under a &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;creativecommons.org&#x2F;licenses&#x2F;by&#x2F;2.0&#x2F;deed.en&quot;&gt;Creative Commons&lt;&#x2F;a&gt; license on &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.flickr.com&#x2F;photos&#x2F;adselwood&#x2F;2594981946&#x2F;&quot;&gt;Flickr&lt;&#x2F;a&gt;)&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>ATT U-Verse vs. ?</title>
+        <published>2009-02-21T00:00:00+00:00</published>
+        <updated>2009-02-21T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://digikata.com/2009-02-att-u-verse-vs/"/>
+        <id>https://digikata.com/2009-02-att-u-verse-vs/</id>
+        
+        <content type="html" xml:base="https://digikata.com/2009-02-att-u-verse-vs/">&lt;p&gt;About a year ago ATT started rolling out U-Verse in my neighborhood. Since then, every quarter or so, I get an ATT marketing visitor to my door trying to sell me the service which is, at its full glory,  a combined phone-internet-cable service. (and I think, is fiber-optic to some sort of neighborhood box, but not to your house). Today was the latest visit, but the first marketer was the worst, they didn&#x27;t know any details about the service except is fiber-optic and really great. They didn&#x27;t know what channels they deliver, they didn&#x27;t know the up and down speeds of the net connection, they didn&#x27;t know the price of the accounts after the &quot;promotional period&quot; was over. Somehow they were trained to expect such exitement over the phrase &quot;fiber-optic&quot; that they could instantly sell the new U-Verse service. Oh, that and combined billing. I really really don&#x27;t care about combined billing. I care about what I actually get for my money.&lt;&#x2F;p&gt;
+&lt;p&gt;Since then, things have improved a little. At least the reps know the very basic details of whats offered, like what is the actual speed of the network link that I get. Still when the ATT rep shows up at my door again, and we talk about the detals beyond &quot;its fiber-optic and it&#x27;s great&quot;, I find again and again that for the services that I care about - all three categories are more expensive then my current services. Maybe I&#x27;m just an uber-consumer.&lt;&#x2F;p&gt;
+&lt;p&gt;Actually, I think the fundamental problem is that ATT doesn&#x27;t understand that I&#x27;m a telecom Luddite. My landline service is basic with no additional phone services like caller ID, etc. My cell phone is pay-as-you-go.  Between the barebones local-only ATT account and my third-party long distance company, my family and I make basically unlimited calls for a combined 20-35 a month.  The ATT price would be $30&#x2F;mo. I only very occasionally break $30 a month so really ATT loses here.&lt;&#x2F;p&gt;
+&lt;p&gt;My net connection is a third-party DSL provider at $20&#x2F;mo for 3Mbps down and 768kbs up. ATT&#x27;s rep today claimed 3Mbps  down and 1 Mbps up (their website claims  512bps up) for $30&#x2F;month, or for $20&#x2F;month I can get 768&#x2F;384 kbps. Either again the shiny fiber-optic almost-to-the-home service loses again. The ironic thing here is that ATT supplies the underlying DSL connection here either way, but can&#x27;t seem to keep from offering pathetic value for internet connections.&lt;&#x2F;p&gt;
+&lt;p&gt;Finally, I&#x27;m also a cable Luddite. Dish Network charges about $35&#x2F;mo for local channels and a number of basic cable channels. It&#x27;s pointless comparing the actual number of channels between a given ATT and Dish plan because it would inevitably end up with a race bewteen who offers more QVC or Jewelry TV shopping channels. ATT&#x27;s U-Verse service starts at $54 a month. My family already watches as much programming as they have time for, and with a Netflix account, we what whatever piques our interest. Maybe that makes my family post-telecom consumers or something like that. I value the Netflix service more than I value a higher tier cable service, but if I added that cost in, ATT would come in at $4&#x2F;mo higher.  Still U-Verses loses again to the tune of $4 to $20 a month.&lt;&#x2F;p&gt;
+&lt;p&gt;So for me, U-Verse offers no reason to pay more per month for about the same service. Maybe U-Verse offers some value to people paying for more premium services that I care to get, but until ATT offers some better value to this customer --  well, I guess I&#x27;ll see them in three months.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Bailout Opinion</title>
+        <published>2008-11-21T00:00:00+00:00</published>
+        <updated>2008-11-21T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://digikata.com/2008-11-bailout-opinion/"/>
+        <id>https://digikata.com/2008-11-bailout-opinion/</id>
+        
+        <content type="html" xml:base="https://digikata.com/2008-11-bailout-opinion/">&lt;p&gt;Not that it would ever happen, but I think that if the taxpayers are bailing out the Big 3 automakers, we should basically require them to be broken up into smaller independent companies.  Down the line, if they waste the opportunity (ahem Chrysler), then at that point, they should be small enough to fail and would be replaced by healthier, more responsive companies that can restart from a fresh perspective -- like &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.aptera.com&#x2F;&quot;&gt;Aptera&lt;&#x2F;a&gt; or &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.teslamotors.com&#x2F;&quot;&gt;Tesla&lt;&#x2F;a&gt; or &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.wrightspeed.com&#x2F;&quot;&gt;Wrightspeed&lt;&#x2F;a&gt; (and those are just the exciting ones there are more boring competitors...).&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Lego Sifting Box</title>
+        <published>2008-10-16T00:00:00+00:00</published>
+        <updated>2008-10-16T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://digikata.com/2008-10-lego-sifting-box/"/>
+        <id>https://digikata.com/2008-10-lego-sifting-box/</id>
+        
+        <content type="html" xml:base="https://digikata.com/2008-10-lego-sifting-box/">&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.box4blox.com&#x2F;&quot;&gt;&lt;img src=&quot;&#x2F;&#x2F;1.bp.blogspot.com&#x2F;_kAb6SmYM0ko&#x2F;SPbG_8GZFNI&#x2F;AAAAAAAAACo&#x2F;Tew9AQMC3H8&#x2F;s200&#x2F;box4blox-cross-section.jpg&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
+I recently purchased a Lego organizing case for my son called &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.box4blox.com&#x2F;&quot;&gt;Box4Blox&lt;&#x2F;a&gt;. It was a little overpriced if one was comparing cost at the material level, but it had a great feature of being able to sift and grade Lego parts. The item has four trays with different sized gridded grilles underneath three of them. From top to bottom, the grills get increasingly smaller, sifting out larger Lego pieces and letting the smaller ones fall through. My only complaint is that the box wasn&#x27;t larger for the price. Once a tray gets about 60% full, the &quot;sifting-action&quot; gets a little choked out. Overall the Box4Blox sifter is a great product. My son happily found a renewed interest in his Lego toys as soon as he was able to get to a wider array of different types and sizes of parts easily.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>U.S. Farmers Save By Installing Manure Digesters</title>
+        <published>2008-10-04T00:00:00+00:00</published>
+        <updated>2008-10-04T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://digikata.com/2008-10-us-farmers-save-by-installing-manure-digesters/"/>
+        <id>https://digikata.com/2008-10-us-farmers-save-by-installing-manure-digesters/</id>
+        
+        <content type="html" xml:base="https://digikata.com/2008-10-us-farmers-save-by-installing-manure-digesters/">&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.flickr.com&#x2F;photos&#x2F;foxypar4&#x2F;&quot;&gt;&lt;img src=&quot;&#x2F;&#x2F;3.bp.blogspot.com&#x2F;_kAb6SmYM0ko&#x2F;SOfLS-xa2KI&#x2F;AAAAAAAAACg&#x2F;JoUAtssdd2A&#x2F;s320&#x2F;924981320_f1e688b289_m.jpg&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
+Popular Mechanics has posted an &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.popularmechanics.com&#x2F;science&#x2F;earth&#x2F;4285577.html?nav=rss20&quot;&gt;article&lt;&#x2F;a&gt; interviewing dairy farmer Shawn Saylor. Saylor describes the multiple benefits of the anarobic biodigester system he installed. I&#x27;ve always thought that there was an archetype of a small, savvy, independent citizen-farmer at the heart of the image of a pragmatic can-do attitude of America. It&#x27;s great to see that showing in the article.&lt;&#x2F;p&gt;
+&lt;p&gt;The digester system is fundamentally improving Saylor&#x27;s bottom line dairy finances while providing a number of side benefits.  For example, on the finance side, the digester provides electric, heat, and fertilizer.  It makes him money by offsetting his electric bill, fuel for heat, in addition to putting electric back into the grid. Incidentally, it also reduces the dairy manure waste stream into the watershed while also diverting a lot of gases which would otherwise enter the atmosphere driving global climate change. I am speculating a little here on the overall benefit - the gases are still burnt, generating carbon dioxide, but I&#x27;m guessing that&#x27;s less harmful that methane going directly into the atmosphere. The electricity put back into the grid would offset other carbon sources that would have been used anyway for the farm and his neighbors...&lt;&#x2F;p&gt;
+&lt;p&gt;This installation was helped by a government grant partially offsetting the cost of the system. To me this is a great example of how government should be involved in accelerating common sense green technologies. Or in economic terms, reducing the cost of social externalities while improving the efficiency of businesses. The cost of the grant is offset by the long term efficiency in the dairy business which benefits the government in improved long term tax base.&lt;&#x2F;p&gt;
+&lt;p&gt;(&lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.popularmechanics.com&#x2F;science&#x2F;earth&#x2F;4285577.html?nav=rss20&quot;&gt;article&lt;&#x2F;a&gt; from Popular Mechanics, Creative Commons photo from Flickr user &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.flickr.com&#x2F;people&#x2F;foxypar4&#x2F;&quot;&gt;foxypar4&lt;&#x2F;a&gt;)&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Digikata Blog - adobe</title>
+    <subtitle>My underupdated blog</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://digikata.com/tags/adobe/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://digikata.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2008-11-25T00:00:00+00:00</updated>
+    <id>https://digikata.com/tags/adobe/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Olympics Siverlight missing?</title>
+        <published>2008-11-25T00:00:00+00:00</published>
+        <updated>2008-11-25T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://digikata.com/2008-11-olympics-siverlight-missing/"/>
+        <id>https://digikata.com/2008-11-olympics-siverlight-missing/</id>
+        
+        <content type="html" xml:base="https://digikata.com/2008-11-olympics-siverlight-missing/">&lt;p&gt;Hmm, cleaning out my bookmarks, I opened up the NBC Olympics site. At the height of the 2008 Olympics they had been running Microsoft&#x27;s &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;silverlight.net&#x2F;&quot;&gt;Silverlight&lt;&#x2F;a&gt; pretty heavily all over the place. Today, because I run &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;noscript.net&#x2F;&quot;&gt;NoScript&lt;&#x2F;a&gt; on Firefox, I see a big pre-loading box saying - download Adobe flash 7 or higher all over the place. The videos still seem to use silverlight though... Ah I&#x27;m probably just remembering wrong.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

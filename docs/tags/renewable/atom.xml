@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Digikata Blog - renewable</title>
+    <subtitle>My underupdated blog</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://digikata.com/tags/renewable/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://digikata.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2008-09-22T00:00:00+00:00</updated>
+    <id>https://digikata.com/tags/renewable/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Residential Wind Turbines</title>
+        <published>2008-09-22T00:00:00+00:00</published>
+        <updated>2008-09-22T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://digikata.com/2008-09-residential-wind-turbines/"/>
+        <id>https://digikata.com/2008-09-residential-wind-turbines/</id>
+        
+        <content type="html" xml:base="https://digikata.com/2008-09-residential-wind-turbines/">&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.ecogeek.org&#x2F;&quot;&gt;EcoGeek&lt;&#x2F;a&gt; has a comparative &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.ecogeek.org&#x2F;content&#x2F;view&#x2F;2118&#x2F;&quot;&gt;review&lt;&#x2F;a&gt; of residential wind turbines. None of these turbines would be a single-item install to replace all your electricity use, but they&#x27;re affordable and if your electricty structure is anything like mine, taking the most expensive tier out of the bill would actually give you a financial payback pretty fast.  It&#x27;s on my list of back-of-the-envelope modelling articles to post an analysis of just what the energy and financial return might be for installing one of these.&lt;&#x2F;p&gt;
+&lt;p&gt;If you&#x27;re interested in making some estimates yourself,  the Energy department has some useful &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.eere.energy.gov&#x2F;windandhydro&#x2F;windpoweringamerica&#x2F;wind_maps.asp&quot;&gt;data&lt;&#x2F;a&gt; for windspeeds at 30m altitudes. (30m! no wonder many cities don&#x27;t encourage them in  urban settings.)  Alternately, if you&#x27;re lucky, you might find data for a &lt;a href=&quot;&#x2F;&#x2F;www.blogger.com&#x2F;www.wunderground.com&quot;&gt;Weather Underground&lt;&#x2F;a&gt; station near you - however, I think most stations are rooftop vs on a 30m pole and so may be much slower.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Digikata Blog - lego</title>
+    <subtitle>My underupdated blog</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://digikata.com/tags/lego/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://digikata.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2008-10-16T00:00:00+00:00</updated>
+    <id>https://digikata.com/tags/lego/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Lego Sifting Box</title>
+        <published>2008-10-16T00:00:00+00:00</published>
+        <updated>2008-10-16T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://digikata.com/2008-10-lego-sifting-box/"/>
+        <id>https://digikata.com/2008-10-lego-sifting-box/</id>
+        
+        <content type="html" xml:base="https://digikata.com/2008-10-lego-sifting-box/">&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.box4blox.com&#x2F;&quot;&gt;&lt;img src=&quot;&#x2F;&#x2F;1.bp.blogspot.com&#x2F;_kAb6SmYM0ko&#x2F;SPbG_8GZFNI&#x2F;AAAAAAAAACo&#x2F;Tew9AQMC3H8&#x2F;s200&#x2F;box4blox-cross-section.jpg&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
+I recently purchased a Lego organizing case for my son called &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.box4blox.com&#x2F;&quot;&gt;Box4Blox&lt;&#x2F;a&gt;. It was a little overpriced if one was comparing cost at the material level, but it had a great feature of being able to sift and grade Lego parts. The item has four trays with different sized gridded grilles underneath three of them. From top to bottom, the grills get increasingly smaller, sifting out larger Lego pieces and letting the smaller ones fall through. My only complaint is that the box wasn&#x27;t larger for the price. Once a tray gets about 60% full, the &quot;sifting-action&quot; gets a little choked out. Overall the Box4Blox sifter is a great product. My son happily found a renewed interest in his Lego toys as soon as he was able to get to a wider array of different types and sizes of parts easily.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

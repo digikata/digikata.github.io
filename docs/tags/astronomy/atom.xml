@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Digikata Blog - astronomy</title>
+    <subtitle>My underupdated blog</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://digikata.com/tags/astronomy/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://digikata.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2008-11-22T00:00:00+00:00</updated>
+    <id>https://digikata.com/tags/astronomy/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Sun Images</title>
+        <published>2008-11-22T00:00:00+00:00</published>
+        <updated>2008-11-22T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://digikata.com/2008-11-sun-images/"/>
+        <id>https://digikata.com/2008-11-sun-images/</id>
+        
+        <content type="html" xml:base="https://digikata.com/2008-11-sun-images/">&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.boston.com&#x2F;bigpicture&#x2F;2008&#x2F;10&#x2F;the_sun.html&quot;&gt;&lt;img src=&quot;&#x2F;&#x2F;3.bp.blogspot.com&#x2F;_kAb6SmYM0ko&#x2F;SSOtKwAWD_I&#x2F;AAAAAAAAACw&#x2F;ubngh__1Vt8&#x2F;s200&#x2F;sunpic.jpg&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;a&gt;I love &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.boston.com&#x2F;bigpicture&#x2F;2008&#x2F;10&#x2F;the_sun.html&quot;&gt;these&lt;&#x2F;a&gt; solar images. Nature is beautiful. #9 is one of my favorites. Once you&#x27;re through with looking at the sun imagery, look at some of the other &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.boston.com&#x2F;bigpicture&#x2F;&quot;&gt;Big Picture&lt;&#x2F;a&gt; columns. Who says that newspapers can&#x27;t figure out the web. The &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.boston.com&#x2F;&quot;&gt;Boston Globe&lt;&#x2F;a&gt; seems to be doing well in the medium in this case.
+(from &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;digg.com&#x2F;space&#x2F;Incredible_Images_of_the_Sun_PICS&quot;&gt;Digg&lt;&#x2F;a&gt;)&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

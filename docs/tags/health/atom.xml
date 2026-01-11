@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Digikata Blog - health</title>
+    <subtitle>My underupdated blog</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://digikata.com/tags/health/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://digikata.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2009-08-11T00:00:00+00:00</updated>
+    <id>https://digikata.com/tags/health/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Healthcare Soda: Predictably Broken Competitive Markets</title>
+        <published>2009-08-11T00:00:00+00:00</published>
+        <updated>2009-08-11T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://digikata.com/2009-08-healthcare-soda-predictably-broken-competitive-mar/"/>
+        <id>https://digikata.com/2009-08-healthcare-soda-predictably-broken-competitive-mar/</id>
+        
+        <content type="html" xml:base="https://digikata.com/2009-08-healthcare-soda-predictably-broken-competitive-mar/">&lt;p&gt;Interesting data on health care by &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;blogs.harvardbusiness.org&#x2F;haque&#x2F;&quot;&gt;Umair Haque&lt;&#x2F;a&gt; at the Harvard Business Review in &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;blogs.harvardbusiness.org&#x2F;haque&#x2F;2009&#x2F;08&#x2F;how_to_think_constructively_ab.html&quot;&gt;this article&lt;&#x2F;a&gt;. (he actually has a lot of interesting articles in HBR.) I&#x27;ve been thinking that the private healthcare industry as a competitive market is pretty broken in the US. It&#x27;s not really surprising to me that a competitive market works very poorly with its characteristics. For a market to work best, a purchase should have verifiable quality and needs to be repeatable or reversible, meaning you make that purchase decision again and again, or if you find a choice was bad, you can change the choice or reverse it.  For example, that may mean giving back the product, or discarding it for another, or selling to someone else. Here&#x27;s an example:&lt;&#x2F;p&gt;
+&lt;p&gt;Suppose you buy a soda, then take a sip, and find that you hate the taste. No big deal - if its really that bad, you could stop drinking it partway through and toss it. Choose another brand next time.&lt;&#x2F;p&gt;
+&lt;p&gt;Healthcare doesn&#x27;t work that way. Now imagine if the only way to shop for soda is to buy a can every month and put it in the garage. If you open that soda you have to keep that can, finish the drink, finish what&#x27;s in the garage, and keep buying it for a while. That&#x27;s what happens if you get seriously ill and really need to lean on that health insurance. You might know how an insurer handles routine care, but you really don&#x27;t know the quality of your health provider until you&#x27;re in dire straits. At that point, you can&#x27;t switch.&lt;&#x2F;p&gt;
+&lt;p&gt;In these circumstances, is it any wonder that there is a fundamental disconnect between the profit of health insurance companies they quality they deliver. In California, there&#x27;s been an ongoing fight about insurance companies cancelling policies when when serious care is needed (search for &quot;California lawsuit health insurance cancellation&quot; or click &lt;a href=&quot;&#x2F;&#x2F;www.google.com&#x2F;search?hl=en&amp;amp;q=california+health+insurance+cancellation+lawsuits&quot;&gt;here.&lt;&#x2F;a&gt; Some of  insurance companies even paid employees bonuses to cancel policies of very sick people based on technicalities on their initial applications (sometimes years back).  Settlements in some of those cases after the fact must be very bittersweet I&#x27;m sure that some of those patients received worse care, or suffered permanent injury or death.  Finally, if you can&#x27;t work, eventually you hit the end of what you&#x27;re employer is willing and able to provide and you go bankrupt. This drives a suprisingly large portion of bankruptcies in the United States (article &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.forbes.com&#x2F;feeds&#x2F;hscout&#x2F;2009&#x2F;06&#x2F;04&#x2F;hscout627785.html&quot;&gt;here&lt;&#x2F;a&gt;).&lt;&#x2F;p&gt;
+&lt;p&gt;I haven&#x27;t even touched upon how things  are even more broken because we&#x27;re not even the ones shopping for this healthcare soda. Our employers are usually the one shopping for it.&lt;&#x2F;p&gt;
+&lt;p&gt;I don&#x27;t know how to fix things - I do like to idea of a publicly chartered competitor to private insurance, but really we need to find a way to connect up the healthcare market costs to delivered value to us, the consumers.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Gov&#x27;t Blocks Private Testing for Mad Cow Disease</title>
+        <published>2008-08-30T00:00:00+00:00</published>
+        <updated>2008-08-30T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://digikata.com/2008-08-govt-blocks-private-testing-for-mad-cow-disease/"/>
+        <id>https://digikata.com/2008-08-govt-blocks-private-testing-for-mad-cow-disease/</id>
+        
+        <content type="html" xml:base="https://digikata.com/2008-08-govt-blocks-private-testing-for-mad-cow-disease/">&lt;p&gt;I had intended to keep this blog mostly technical, but this just makes me angry.  Creekstone Farms Premium Beef was blocked from performing &quot;mad-cow&quot; tests on 100% of its beef by U.S. Dept. of Agriculture and USDA. This is an issue that affects both free market practice within the the United States and an international competitiveness issue as Creekstone was trying to use the testing to increase its ability to sell its beef to other countries.&lt;&#x2F;p&gt;
+&lt;p&gt;The authority to block the testing seems to be granted by a 1913 law allowing the USDA to regulate &quot;treatment&quot; of animals. The court accepts the argument of the government that treatment includes diagnosis and testing. The LegalTimes blog writes:
+&quot;There is a two- to eight-year incubation period for mad cow disease. Because most cattle slaughtered in the United States are less than 24 months old, the most common mad cow disease test is unlikely to catch the disease, the appeals court noted. If the government does not control the tests, the USDA is worried about beef exporters unilaterally giving consumers false assurance.&quot;&lt;&#x2F;p&gt;
+&lt;p&gt;Here&#x27;s where it gets at least a little technical. Maybe instead of blocking a company wanting to perform additional testing on it&#x27;s products, the USDA should be advising the company how best to perform its testing. The language implies that there is a more accurate test for the disease - why not require the better test if they are concerned about false assurances. Or design an experimentally robust methodology to maybe hold back a few cows from slaughter to age them to maturity where the disease could be detected. Anything is better than willful ignorance of a fatal disease!&lt;&#x2F;p&gt;
+&lt;p&gt;One technical aspect we have to come to grips with here is that in this case is that tests often aren&#x27;t perfect. It&#x27;s a wide problem. Almost all medical tests have statistical probabilities in at least four states:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;true positive:  the cow has the disease and the test correctly identifies it&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;true negative: the cow is disease free and the test correctly indicates this.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;false positive: the cow is disease free and the test incorrectly indicates that is diseased&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;false negative: the cow is diseased and the test incorrectly indicates it&#x27;s safe&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;One does have to worry about all the outcomes, especially when testing 100%. Look at Bayesian inference in Wikipedia, particularly the portions relating to &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Bayesian_statistics#False_positives_in_a_medical_test&quot;&gt;medical testing&lt;&#x2F;a&gt;. In particular, one needs to look at false positives when the rate of disease is lower then the false-alarm rate - there is a legitimate concern here that tests and followup tests may cost a lot of money, cause a lot of concern , and not increase safety overall.&lt;&#x2F;p&gt;
+&lt;p&gt;Overall though, the actions of the government here seem particularly onerous when we lose an opportunity for government to work with a private company that seems willing to implement new approaches to at least characterize the rate of a serious disease.  It also seems like the government values the profits of the beef industry over pushing forward to proactively address a public health concern. If the tests aren&#x27;t perfect now, we should be able to create policy to handle the real complexities while allowing the free market to bring down costs of safer products.&lt;&#x2F;p&gt;
+&lt;p&gt;Imagine if a government agency told one car manufacturer that it couldn&#x27;t install seat belts and airbags because consumers might demand the additional safety procedures from other car makers. &quot;Volvo, you are barred from putting traction control in your cars because Ford might be put at a disadvantage... &quot;  Shouldn&#x27;t we be promoting a free market that actively competes on adding customer safety into products!&lt;&#x2F;p&gt;
+&lt;p&gt;(From the &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;pacer.cadc.uscourts.gov&#x2F;common&#x2F;opinions&#x2F;200808&#x2F;07-5173-1135720.pdf&quot;&gt;Federal appeals court&lt;&#x2F;a&gt; via the &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;legaltimes.typepad.com&#x2F;blt&#x2F;2008&#x2F;08&#x2F;court-beef-expo.html&quot;&gt;LegalTimes&lt;&#x2F;a&gt; blog via &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;news.slashdot.org&#x2F;article.pl?sid=08&#x2F;08&#x2F;30&#x2F;238223&amp;amp;from=rss&quot;&gt;Slashdot&lt;&#x2F;a&gt;)&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Health and the Anti-Kidnapping RFID Implant</title>
+        <published>2008-08-22T00:00:00+00:00</published>
+        <updated>2008-08-22T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://digikata.com/2008-08-health-and-the-anti-kidnapping-rfid-implant/"/>
+        <id>https://digikata.com/2008-08-health-and-the-anti-kidnapping-rfid-implant/</id>
+        
+        <content type="html" xml:base="https://digikata.com/2008-08-health-and-the-anti-kidnapping-rfid-implant/">&lt;p&gt;A Gizmodo &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;gizmodo.com&#x2F;5040538&#x2F;mexicos-rich-embedding-gps+assisted-rfid-tags-under-their-skin-in-case-of-kidnapping&quot;&gt;article&lt;&#x2F;a&gt; describes Radio-Frequency IDentification (RFID) tags being implanted into people as an anti-kidnapping measure by a company called Xega in Mexico. The system reportedly involves an external GPS unit keeping in contact with the RFID tag. Besides the problem of getting separated from the external GPS, there may be some health implications too. I don&#x27;t know if Xega uses the same packaging&#x2F;RF technologies a VeriChip, but there were studies linking RFID to &quot;induced&quot; tumors in mice, as described in this Salon &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;machinist.salon.com&#x2F;blog&#x2F;2007&#x2F;09&#x2F;10&#x2F;rfid_cancer&#x2F;&quot;&gt;article&lt;&#x2F;a&gt;. Hmm, protection against kidnapping now, or possible cancer later - decsions, decisions...&lt;&#x2F;p&gt;
+&lt;p&gt;Coverage on the RFID tags also on Slashdot &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;idle.slashdot.org&#x2F;article.pl?sid=08&#x2F;08&#x2F;22&#x2F;1928238&quot;&gt;here&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

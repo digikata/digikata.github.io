@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Digikata Blog - graphics</title>
+    <subtitle>My underupdated blog</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://digikata.com/tags/graphics/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://digikata.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2009-08-06T00:00:00+00:00</updated>
+    <id>https://digikata.com/tags/graphics/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Touchable Holograms</title>
+        <published>2009-08-06T00:00:00+00:00</published>
+        <updated>2009-08-06T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://digikata.com/2009-08-touchable-holograms/"/>
+        <id>https://digikata.com/2009-08-touchable-holograms/</id>
+        
+        <content type="html" xml:base="https://digikata.com/2009-08-touchable-holograms/">&lt;p&gt;Popular Science posted this &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.popsci.com&#x2F;entertainment-amp-gaming&#x2F;article&#x2F;2009-08&#x2F;tokyo-scientists-create-touchable-hologram&quot;&gt;article&lt;&#x2F;a&gt; and video about touchable holograms at &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.siggraph.org&#x2F;&quot;&gt;Siggraph&lt;&#x2F;a&gt; &#x27;09, this year. It&#x27;s a combination of three items: a 3d display using concave mirrors something like this &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.amazon.com&#x2F;Toysmith-79747-Mini-3-D-Mirascope&#x2F;dp&#x2F;B000N5T8KA&quot;&gt;3D mirascope toy&lt;&#x2F;a&gt;, two wii-motes strapped statically for position detection, and a home-brewed (university-brewed?) &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Phased_array&quot;&gt;phased array&lt;&#x2F;a&gt; of ultrasound drivers.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

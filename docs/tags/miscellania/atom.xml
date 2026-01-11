@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Digikata Blog - miscellania</title>
+    <subtitle>My underupdated blog</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://digikata.com/tags/miscellania/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://digikata.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2008-09-18T00:00:00+00:00</updated>
+    <id>https://digikata.com/tags/miscellania/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Miscellania: Basic Aerodynamics</title>
+        <published>2008-09-18T00:00:00+00:00</published>
+        <updated>2008-09-18T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://digikata.com/2008-09-miscellania-basic-aerodynamics/"/>
+        <id>https://digikata.com/2008-09-miscellania-basic-aerodynamics/</id>
+        
+        <content type="html" xml:base="https://digikata.com/2008-09-miscellania-basic-aerodynamics/">&lt;p&gt;&lt;a href=&quot;&#x2F;&#x2F;2.bp.blogspot.com&#x2F;_kAb6SmYM0ko&#x2F;SM80MZT3FeI&#x2F;AAAAAAAAACY&#x2F;acc3Vq4QGgk&#x2F;s1600-h&#x2F;foilsim.png&quot;&gt;&lt;img src=&quot;&#x2F;&#x2F;2.bp.blogspot.com&#x2F;_kAb6SmYM0ko&#x2F;SM80MZT3FeI&#x2F;AAAAAAAAACY&#x2F;acc3Vq4QGgk&#x2F;s320&#x2F;foilsim.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
+For anyone with curious kids (or is a curious kid) who want to know more about how airplanes fly, NASA has posted some material in an &lt;a rel=&quot;external&quot; href=&quot;http:&#x2F;&#x2F;www.grc.nasa.gov&#x2F;WWW&#x2F;K-12&#x2F;airplane&#x2F;short.html&quot;&gt;index&lt;&#x2F;a&gt; of informations meant for K-12 education. My favorite part is the FoilSim Java applet with controls and displays to illustrate what is going on with various parameters with a 2D airfoil.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
