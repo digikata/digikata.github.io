@@ -240,6 +240,9 @@
         <loc>https://digikata.com/tags/investment/</loc>
     </url>
     <url>
+        <loc>https://digikata.com/tags/io/</loc>
+    </url>
+    <url>
         <loc>https://digikata.com/tags/ipad/</loc>
     </url>
     <url>
@@ -247,6 +250,9 @@
     </url>
     <url>
         <loc>https://digikata.com/tags/linux/</loc>
+    </url>
+    <url>
+        <loc>https://digikata.com/tags/logs/</loc>
     </url>
     <url>
         <loc>https://digikata.com/tags/markets/</loc>
@@ -297,6 +303,9 @@
         <loc>https://digikata.com/tags/robotics/</loc>
     </url>
     <url>
+        <loc>https://digikata.com/tags/rust/</loc>
+    </url>
+    <url>
         <loc>https://digikata.com/tags/safety/</loc>
     </url>
     <url>
@@ -325,6 +334,9 @@
     </url>
     <url>
         <loc>https://digikata.com/tags/toys/</loc>
+    </url>
+    <url>
+        <loc>https://digikata.com/tags/tracing/</loc>
     </url>
     <url>
         <loc>https://digikata.com/tags/uav/</loc>
