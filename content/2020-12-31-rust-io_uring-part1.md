@@ -1,6 +1,9 @@
 +++
 title = "Rust and io_uring Part 1"
 date = 2020-12-31
+
+[taxonomies]
+tags = ["rust", "io"]
 +++
 
 There are really a lot of different io_uring crates for rust. Some are quick

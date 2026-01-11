@@ -7,16 +7,129 @@
 {% block content %}
   <article>
     <h1>All Tags</h1>
-    <nav>
-      <ul>
-        {% for term in terms %}
-          <li>
-            <a href="{{ term.permalink }}">
-              {{ term.name }} ({{ term.pages | length }})
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    </nav>
+    <style>
+      .tag-section {
+        margin-bottom: 2em;
+      }
+      .tag-section h2 {
+        font-size: 1.2em;
+        margin-bottom: 0.5em;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 0.25em;
+      }
+      .tag-grid {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        padding-left: 0;
+        margin-left: 0;
+        text-indent: 0;
+      }
+      .tag-grid li {
+        display: inline;
+        margin-right: 0.75em;
+        margin-left: 0;
+        list-style-type: none;
+      }
+      .tag-grid li a {
+        text-decoration: none;
+        color: var(--primary);
+      }
+      .tag-grid li a:hover {
+        text-decoration: underline;
+      }
+      .tag-count {
+        color: #666;
+        font-size: 0.9em;
+      }
+    </style>
+
+    {# Numbers section #}
+    {% set_global section_tags = [] %}
+    {% for term in terms %}
+      {% if term.name is matching("^[0-9]") %}
+        {% set_global section_tags = section_tags | concat(with=term) %}
+      {% endif %}
+    {% endfor %}
+    {% if section_tags | length > 0 %}
+      <div class="tag-section">
+        <h2>Numbers</h2>
+        <ul class="tag-grid">
+          {% for term in section_tags %}
+            <li>
+              <a href="{{ term.permalink }}">
+                {{ term.name }} <span class="tag-count">({{ term.pages | length }})</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
+    {# A-G section #}
+    {% set_global section_tags = [] %}
+    {% for term in terms %}
+      {% if term.name is matching("^[A-Ga-g]") %}
+        {% set_global section_tags = section_tags | concat(with=term) %}
+      {% endif %}
+    {% endfor %}
+    {% if section_tags | length > 0 %}
+      <div class="tag-section">
+        <h2>A-G</h2>
+        <ul class="tag-grid">
+          {% for term in section_tags %}
+            <li>
+              <a href="{{ term.permalink }}">
+                {{ term.name }} <span class="tag-count">({{ term.pages | length }})</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
+    {# H-P section #}
+    {% set_global section_tags = [] %}
+    {% for term in terms %}
+      {% if term.name is matching("^[H-Ph-p]") %}
+        {% set_global section_tags = section_tags | concat(with=term) %}
+      {% endif %}
+    {% endfor %}
+    {% if section_tags | length > 0 %}
+      <div class="tag-section">
+        <h2>H-P</h2>
+        <ul class="tag-grid">
+          {% for term in section_tags %}
+            <li>
+              <a href="{{ term.permalink }}">
+                {{ term.name }} <span class="tag-count">({{ term.pages | length }})</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
+    {# R-Z section #}
+    {% set_global section_tags = [] %}
+    {% for term in terms %}
+      {% if term.name is matching("^[R-Zr-z]") %}
+        {% set_global section_tags = section_tags | concat(with=term) %}
+      {% endif %}
+    {% endfor %}
+    {% if section_tags | length > 0 %}
+      <div class="tag-section">
+        <h2>R-Z</h2>
+        <ul class="tag-grid">
+          {% for term in section_tags %}
+            <li>
+              <a href="{{ term.permalink }}">
+                {{ term.name }} <span class="tag-count">({{ term.pages | length }})</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
   </article>
 {% endblock content %}

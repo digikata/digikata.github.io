@@ -2,6 +2,10 @@
 title = "Getting Started with Rust Tracing"
 date = 2025-04-10
 template = "post-wide.html"
+
+[taxonomies]
+tags = ["rust", "tracing", "logs"]
+
 +++
 
 The Tracing crate for Rust is a well-implemented tracing library for a wide
